@@ -45,7 +45,7 @@ const Hero = () => {
 
           {/* Description */}
           <p className='pt-3 text-gray-300 text-sm md:text-base lg:text-xl max-w-xl'>
-            I'm <span className="text-blue-400 font-medium">Sluch</span> and I bring full-stack web applications to life with performance and style.
+            I&apos;m <span className="text-blue-400 font-medium">Sluch</span> and I bring full-stack web applications to life with performance and style.
           </p>
 
           {/* CTA Button */}

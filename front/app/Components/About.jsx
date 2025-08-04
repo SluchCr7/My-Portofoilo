@@ -14,9 +14,9 @@ const About = () => {
       <div className="w-full max-w-5xl bg-white/5 backdrop-blur-md border border-white/10 shadow-xl p-8 rounded-2xl flex flex-col gap-4 text-white">
         <h2 className="text-2xl md:text-3xl font-bold tracking-wide">About Me</h2>
         <p className="text-gray-300 text-sm leading-6 md:text-base w-full md:w-[80%]">
-          I'm a passionate full-stack developer with a strong foundation in modern web technologies. 
+          I&apos;m a passionate full-stack developer with a strong foundation in modern web technologies. 
           I build scalable and interactive applications using the MERN stack and beyond. 
-          From idea to deployment, I'm committed to clean, efficient, and user-centered development.
+          From idea to deployment, I&apos;m committed to clean, efficient, and user-centered development.
         </p>
       </div>
 
