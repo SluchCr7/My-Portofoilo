@@ -3,10 +3,11 @@ import { CiServer } from "react-icons/ci";
 import { CiImageOn } from "react-icons/ci";
 import { IoMdColorPalette } from "react-icons/io";
 
-// techIcons.tsx
+// lib/techIcons.tsx
 import { FaJsSquare, FaNodeJs } from "react-icons/fa";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
-import { IoLogoCss3, IoLogoFigma } from "react-icons/io";
+import { IoLogoCss3 } from "react-icons/io";
+import { SiFigma } from "react-icons/si";
 import { DiMongodb } from "react-icons/di";
 
 export const techIcons = {
@@ -14,7 +15,7 @@ export const techIcons = {
   nextjs: <RiNextjsFill />,
   tailwind: <RiTailwindCssFill />,
   css: <IoLogoCss3 />,
-  figma: <IoLogoFigma />,
+  figma: <SiFigma />,
   mongodb: <DiMongodb />,
   nodejs: <FaNodeJs />,
 };
