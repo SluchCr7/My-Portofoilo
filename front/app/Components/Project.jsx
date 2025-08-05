@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import { techIcons } from '@/lib/techIcons';
+import { techIcons } from '@/lib/Data';
 const Project = ({project , setProject , idx}) => {
   return (
     <div
