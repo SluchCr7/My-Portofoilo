@@ -4,7 +4,7 @@ const Footer = ({setIsOpen}) => {
   return (
     <footer className="w-full bg-Black-100 text-white mt-20">
       {/* Call to Action */}
-      <div className="w-full flex flex-col items-center text-center px-4 md:px-10 py-16  rounded-t-3xl shadow-inner">
+      <div className="w-full flex flex-col items-center text-center px-4 md:px-10 pt-12 pb-24  rounded-t-3xl shadow-inner">
         <h2 className="text-2xl md:text-4xl font-bold max-w-2xl leading-snug">
           Ready To Take Your Business To The Next Level?
         </h2>

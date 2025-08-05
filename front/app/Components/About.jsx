@@ -18,6 +18,9 @@ const About = () => {
           I build scalable and interactive applications using the MERN stack and beyond. 
           From idea to deployment, I&apos;m committed to clean, efficient, and user-centered development.
         </p>
+        <button className="px-8 py-3 rounded-lg bg-Accent-100 text-Black font-semibold shadow-md w-[200px] hover:bg-Accent-200 transition-all duration-300">
+          <a href="/Resume-AhmedBekr.pdf" download className="btn">Download CV</a>
+        </button>
       </div>
 
       {/* Tools Section */}
@@ -30,7 +33,7 @@ const About = () => {
           {tools.map((tool, idx) => (
             <div key={idx} className="flex items-center gap-3 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-3 hover:scale-105 hover:shadow-xl transition-all duration-300">
               <div className="bg-Black-100 p-2 rounded-lg">
-                <Image src={tool.img} width={40} height={40} alt={tool.name} className="w-10 h-10 object-contain" />
+                <span className="text-3xl">{tool.icon}</span>
               </div>
               <span className="text-white text-sm font-medium">{tool.name}</span>
             </div>

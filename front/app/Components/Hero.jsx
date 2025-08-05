@@ -3,15 +3,16 @@ import React from 'react'
 import { Spotlight } from './ui/Spotlight'
 import { cn } from "@/lib/utils";
 import { TextGenerateEffect } from './ui/text-generate-effect';
-
+import { FaGithub , FaLinkedin , FaInstagram , FaTwitter } from 'react-icons/fa';
 const Hero = () => {
+  const icons = [FaGithub , FaLinkedin , FaInstagram , FaTwitter]
   return (
     <div className='relative pt-36 pb-20 min-h-[100vh]'>
       
       {/* Spotlights */}
       <div>
-        <Spotlight className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen" fill="white" />
-        <Spotlight className="top-10 left-full w-[50vw] h-[80vh]" fill="white" />
+        <Spotlight className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen" fill="blue" />
+        <Spotlight className="top-10 left-full w-[50vw] h-[80vh]" fill="purple" />
         <Spotlight className="top-28 left-80 h-[80vh] w-[50vw]" fill="white" />
       </div>
 
@@ -40,7 +41,7 @@ const Hero = () => {
           {/* Main heading with animation */}
           <TextGenerateEffect
             className='text-center text-[38px] md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-snug text-white drop-shadow-[0_0_15px_rgba(59,130,246,0.2)]'
-            words='I am a Fullstack Developer'
+            words='Building Modern Web Solutions with React & Node'
           />
 
           {/* Description */}
@@ -52,7 +53,11 @@ const Hero = () => {
           <button className="mt-6 px-6 py-2 text-sm md:text-base font-semibold bg-blue-600 hover:bg-blue-700 text-white rounded-xl shadow-lg transition-all duration-300">
             Explore My Work
           </button>
-
+          <div className='absolute -bottom-28 flex items-center gap-10'>
+            {icons.map((Icon , idx) => (
+              <Icon key={idx} className="text-lg text-gray-300 hover:text-gray-400 transition-all duration-300" />
+            ))}
+          </div>
         </div>
       </div>
     </div>

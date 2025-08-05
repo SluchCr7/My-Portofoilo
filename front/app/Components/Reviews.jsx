@@ -12,7 +12,7 @@ const Reviews = () => {
             Some of my Clients <span className="text-purple-400">Reviews</span>
         </h2>
         <div className='w-full'>
-            <InfiniteMovingCards items={reviews} direction="left" pauseOnHover />
+            <InfiniteMovingCards items={reviews} direction="left" />
         </div>
     </div>
   )

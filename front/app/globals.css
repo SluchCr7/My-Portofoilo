@@ -2,21 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .animate-fadeIn {
+    animation: fadeIn 0.4s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
 /* @import "tailwindcss"; */
 
 @theme inline {
   --animate-spotlight: spotlight 2s ease 0.75s 1 forwards;
-}
+}  
 
 @keyframes spotlight {
   0% {
     opacity: 0;
     transform: translate(-72%, -62%) scale(0.5);
-  }
+  }  
   100% {
     opacity: 1;
     transform: translate(-50%, -40%) scale(1);
-  }
-}
+  }  
+}  
 
 
