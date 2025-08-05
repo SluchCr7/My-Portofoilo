@@ -3,15 +3,21 @@ import { CiServer } from "react-icons/ci";
 import { CiImageOn } from "react-icons/ci";
 import { IoMdColorPalette } from "react-icons/io";
 
-import { SiExpress } from "react-icons/si";
+// techIcons.tsx
+import { FaJsSquare, FaNodeJs } from "react-icons/fa";
+import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
+import { IoLogoCss3, IoLogoFigma } from "react-icons/io";
 import { DiMongodb } from "react-icons/di";
-import { IoLogoReact } from "react-icons/io5";
-import { RiTailwindCssFill } from "react-icons/ri";
-import { RiNextjsFill } from "react-icons/ri";
-import { FaJsSquare } from "react-icons/fa";
-import { FaNodeJs } from "react-icons/fa";
-import { IoLogoCss3 } from "react-icons/io5";
-import { IoLogoFigma } from "react-icons/io5";
+
+export const techIcons = {
+  javascript: <FaJsSquare />,
+  nextjs: <RiNextjsFill />,
+  tailwind: <RiTailwindCssFill />,
+  css: <IoLogoCss3 />,
+  figma: <IoLogoFigma />,
+  mongodb: <DiMongodb />,
+  nodejs: <FaNodeJs />,
+};
 
 
 export const services = [
@@ -82,7 +88,7 @@ export const projects = [
     img: "/Projects/Proj1.png",
     name: "PlayTactic",
     description: "A football-themed quiz game based on challenges, targeting football fans, with a point system and ranking.",
-    tools: [<FaJsSquare />, <RiNextjsFill />, <RiTailwindCssFill />],
+    tools: ["javascript", "nextjs", "tailwind"],
     finishedAt: "May 2024",
     github: "https://github.com/your-username/playtactic",
     preview: "https://playtactic.vercel.app",
@@ -101,7 +107,7 @@ export const projects = [
     img: "/Projects/Proj2.png",
     name: "My Portfolio",
     description: "My personal website to showcase projects and skills, with a modern and fully dark theme.",
-    tools: [<IoLogoCss3 />, <FaJsSquare />, <RiTailwindCssFill />, <DiMongodb />, <FaNodeJs />],
+    tools: ["nextjs", "tailwind"],
     finishedAt: "August 2025",
     github: "https://github.com/your-username/portfolio",
     preview: "https://ahmed-portfolio.vercel.app",
@@ -120,7 +126,7 @@ export const projects = [
     img: "/Projects/Proj3.png",
     name: "Taskify",
     description: "A personal task management app with a dashboard and drag-and-drop functionality.",
-    tools: [<FaJsSquare />, <RiNextjsFill />, <RiTailwindCssFill />, <IoLogoFigma />],
+    tools: ["javascript", "nextjs", "tailwind" , "figma"],
     finishedAt: "March 2025",
     github: "https://github.com/your-username/taskify",
     preview: "https://taskify-app.vercel.app",
@@ -139,7 +145,7 @@ export const projects = [
     img: "/Projects/Proj4.png",
     name: "Zocial",
     description: "A social media app similar to Twitter, allowing account creation, posting, and following users.",
-    tools: [<FaJsSquare />, <RiNextjsFill />, <RiTailwindCssFill />],
+    tools: ["javascript", "nextjs", "tailwind" , "nodejs", "mongodb"],
     finishedAt: "July 2025",
     github: "https://github.com/your-username/zocial",
     preview: "https://zocial.vercel.app",
@@ -158,7 +164,7 @@ export const projects = [
     img: "/Projects/Proj5.png",
     name: "Cryptova",
     description: "A crypto information app displaying real-time prices and market analysis with charts.",
-    tools: [<FaJsSquare />, <RiNextjsFill />, <RiTailwindCssFill />],
+    tools: ["javascript", "nextjs", "tailwind"],
     finishedAt: "February 2025",
     github: "https://github.com/your-username/cryptova",
     preview: "https://cryptova.vercel.app",
@@ -177,7 +183,7 @@ export const projects = [
     img: "/Projects/Proj6.png",
     name: "Fashonista",
     description: "An e-commerce store for women's clothing, featuring product filters and a shopping cart.",
-    tools: [<FaJsSquare />, <RiNextjsFill />, <RiTailwindCssFill />],
+    tools: ["javascript", "nextjs", "tailwind" , "figma" , "mongodb"],
     finishedAt: "June 2025",
     github: "https://github.com/your-username/fashonista",
     preview: "https://fashonista.vercel.app",

@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-
+import { techIcons } from '@/lib/techIcons';
 const Project = ({project , setProject , idx}) => {
   return (
     <div
@@ -27,7 +27,9 @@ const Project = ({project , setProject , idx}) => {
         {/* Tools */}
         <div className='flex items-center gap-2 flex-wrap'>
         {project.tools.map((tool, i) => (
-            <span key={i}>{tool}</span>
+            <span key={i} className="text-xl text-gray-300">
+              {techIcons[tool]}
+            </span>
         ))}
         </div>
 
