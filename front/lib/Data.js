@@ -3,12 +3,13 @@ import { CiServer } from "react-icons/ci";
 import { CiImageOn } from "react-icons/ci";
 import { IoMdColorPalette } from "react-icons/io";
 
-// lib/techIcons.tsx
+// techIcons.tsx
 import { FaJsSquare, FaNodeJs } from "react-icons/fa";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 import { IoLogoCss3 } from "react-icons/io";
-import { SiFigma } from "react-icons/si";
 import { DiMongodb } from "react-icons/di";
+import { SiFigma } from "react-icons/si";
+import { FaReact } from "react-icons/fa6";
 
 export const techIcons = {
   javascript: <FaJsSquare />,
@@ -18,6 +19,7 @@ export const techIcons = {
   figma: <SiFigma />,
   mongodb: <DiMongodb />,
   nodejs: <FaNodeJs />,
+  react: <FaReact />,
 };
 
 
@@ -184,7 +186,7 @@ export const projects = [
     img: "/Projects/Proj6.png",
     name: "Fashonista",
     description: "An e-commerce store for women's clothing, featuring product filters and a shopping cart.",
-    tools: ["javascript", "nextjs", "tailwind" , "figma" , "mongodb"],
+    tools: ["javascript", "nextjs", "tailwind" , "figma" , "mongodb"  ],
     finishedAt: "June 2025",
     github: "https://github.com/your-username/fashonista",
     preview: "https://fashonista.vercel.app",
@@ -204,11 +206,11 @@ export const projects = [
 
 
 export const tools = [
-{ name: "React", icon : <IoLogoReact /> },
+{ name: "React", icon : <FaReact /> },
 { name: "Next.js", icon : <RiNextjsFill /> },
 { name: "Tailwind", icon : <RiTailwindCssFill /> },
 { name: "CSS",  icon : <IoLogoCss3 /> },
-{ name: "Figma",  icon : <IoLogoFigma /> },
+{ name: "Figma",  icon : <SiFigma /> },
 { name: "Javascript", icon : <FaJsSquare /> },
 { name: "Node.js",  icon : <FaNodeJs /> },
 { name: "MongoDB",  icon : <DiMongodb /> }
