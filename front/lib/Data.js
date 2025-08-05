@@ -214,60 +214,6 @@ export const stats = [
 { num: 200, text: "Code Commits" },
 ]
 
-// export const gridItems = [
-//   {
-//     id: 1,
-//     title: "Main Section Title",
-//     description: "Main section description if needed",
-//     className: "md:col-span-6 lg:col-span-3 lg:min-h-[60vh]",
-//     imgClassName: "w-full h-full",
-//     titleClassName: "justify-end",
-//     img: "/main.svg",
-//     spareImg: "",
-//   },
-//   {
-//     id: 2,
-//     title: "Top Right Box",
-//     description: "First stacked box in the right column",
-//     className: "md:col-span-3 lg:col-span-3",
-//     imgClassName: "",
-//     titleClassName: "justify-start",
-//     img: "/top-right.svg",
-//     spareImg: "",
-//   },
-//   {
-//     id: 3,
-//     title: "Bottom Right Box",
-//     description: "Second stacked box in the right column",
-//     className: "md:col-span-3 lg:col-span-3",
-//     imgClassName: "",
-//     titleClassName: "justify-start",
-//     img: "/bottom-right.svg",
-//     spareImg: "",
-//   },
-//   {
-//     id: 4,
-//     title: "Bottom Left Block",
-//     description: "One of the bottom full-width blocks",
-//     className: "md:col-span-3 lg:col-span-3",
-//     imgClassName: "",
-//     titleClassName: "justify-center",
-//     img: "/bottom-left.svg",
-//     spareImg: "",
-//   },
-//   {
-//     id: 5,
-//     title: "Bottom Right Block",
-//     description: "Another bottom full-width block",
-//     className: "md:col-span-3 lg:col-span-3",
-//     imgClassName: "",
-//     titleClassName: "justify-center",
-//     img: "/bottom-right-2.svg",
-//     spareImg: "",
-//   },
-// ];
-
-
 
 export const gridItems = [
   {

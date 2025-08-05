@@ -27,7 +27,7 @@ const Project = ({project , setProject , idx}) => {
         {/* Tools */}
         <div className='flex items-center gap-2 flex-wrap'>
         {project.tools.map((tool, i) => (
-            <span>{tool}</span>
+            <span key={i}>{tool}</span>
         ))}
         </div>
 
