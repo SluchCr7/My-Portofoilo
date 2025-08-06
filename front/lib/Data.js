@@ -223,6 +223,25 @@ export const stats = [
 { num: 200, text: "Code Commits" },
 ]
 
+export const icons = [
+    {
+      link : "https://github.com/SluchCr7",
+      Icon : FaGithub
+    },
+    {
+      link : "https://www.linkedin.com/in/sluch07",
+      Icon : FaLinkedin
+    },
+    {
+      link : "",
+      Icon : FaInstagram
+    },
+    {
+      link : "https://www.facebook.com/ahmed.abobakr.821836/",
+      Icon : FaFacebook
+    }
+]
+
 
 export const gridItems = [
   {

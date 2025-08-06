@@ -8,7 +8,6 @@ import Footer from "./Components/Footer";
 import Contact from "./Components/Contact";
 import { useState } from "react";
 import Services from "./Components/Services";
-import Grid from "./Components/Grid";
 import ProjectView from "./Components/ProjectView";
 import GridOptions from "./Components/GridOptions";
 

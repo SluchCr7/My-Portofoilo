@@ -18,9 +18,9 @@ const About = () => {
           I build scalable and interactive applications using the MERN stack and beyond. 
           From idea to deployment, I&apos;m committed to clean, efficient, and user-centered development.
         </p>
-        <button className="px-8 py-3 rounded-lg bg-Accent-100 text-Black font-semibold shadow-md w-[200px] hover:bg-Accent-200 transition-all duration-300">
-          <a href="/Resume-AhmedBekr.pdf" download className="btn">Download CV</a>
-        </button>
+        <p className="text-gray-300 text-sm leading-6 md:text-base w-full md:w-[80%]">
+          Performance and scalability are always top priorities in my development process. I write clean, maintainable code with a focus on optimizing both frontend and backend systems.
+        </p>
       </div>
 
       {/* Tools Section */}

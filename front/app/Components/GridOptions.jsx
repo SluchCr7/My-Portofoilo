@@ -25,7 +25,7 @@ const GridOptions = () => {
           <div className="bg-gradient-to-br from-purple-600 via-indigo-600 to-blue-600 rounded-xl h-full p-6 text-white w-full flex items-center justify-center flex-col gap-4 shadow-lg">
             <h3 className="text-2xl font-semibold">Download My CV</h3>
             <button className="px-6 py-2 bg-Black-100 text-white font-medium rounded-lg hover:bg-blue-100 transition">
-              Download
+              <a href="/Profile.pdf" download className="btn">Download CV</a>
             </button>
           </div>
           <div className="bg-gradient-to-br from-purple-600 via-indigo-600 to-blue-600 rounded-xl h-full p-6 text-white w-full flex items-center justify-center flex-col gap-4 shadow-lg">

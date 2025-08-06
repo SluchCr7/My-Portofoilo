@@ -3,9 +3,10 @@ import React from 'react'
 import { Spotlight } from './ui/Spotlight'
 import { cn } from "@/lib/utils";
 import { TextGenerateEffect } from './ui/text-generate-effect';
-import { FaGithub , FaLinkedin , FaInstagram , FaTwitter } from 'react-icons/fa';
+import { FaGithub , FaLinkedin , FaInstagram , FaTwitter, FaFacebook } from 'react-icons/fa';
+import Link from 'next/link';
+import { icons } from '@/lib/Data';
 const Hero = () => {
-  const icons = [FaGithub , FaLinkedin , FaInstagram , FaTwitter]
   return (
     <div className='relative pt-36 pb-20 min-h-[100vh]'>
       
@@ -54,8 +55,10 @@ const Hero = () => {
             Explore My Work
           </button>
           <div className='absolute -bottom-28 flex items-center gap-10'>
-            {icons.map((Icon , idx) => (
-              <Icon key={idx} className="text-lg text-gray-300 hover:text-gray-400 transition-all duration-300" />
+            {icons.map(({link , Icon} , idx) => (
+              <Link href={link} key={idx} className="text-lg text-gray-300 hover:text-gray-400 transition-all duration-300" >
+                <Icon/>
+              </Link>
             ))}
           </div>
         </div>
