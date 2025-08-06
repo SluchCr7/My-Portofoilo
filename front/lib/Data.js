@@ -2,6 +2,7 @@ import { CiGlobe } from "react-icons/ci";
 import { CiServer } from "react-icons/ci";
 import { CiImageOn } from "react-icons/ci";
 import { IoMdColorPalette } from "react-icons/io";
+import { FaGithub , FaLinkedin , FaInstagram , FaTwitter, FaFacebook } from 'react-icons/fa';
 
 // techIcons.tsx
 import { FaJsSquare, FaNodeJs } from "react-icons/fa";
