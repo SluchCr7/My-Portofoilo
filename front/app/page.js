@@ -20,7 +20,7 @@ export default function Home() {
         <Hero/>
       </div>
       <About />
-      <GridOptions/>
+      <GridOptions setIsOpen={setIsOpen}/>
       <Services/>
       <Portofoilo setProject={setProject} project={project} />
       <Reviews />

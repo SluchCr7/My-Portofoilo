@@ -5,7 +5,7 @@ import { reviews } from '@/lib/Data'
 const Reviews = () => {
 
   return (
-    <div className='w-full bg-Black-100 px-6 md:px-12 py-16 flex flex-col items-center gap-12 z-[1000]'>
+    <div id="Reviews" className='w-full bg-Black-100 px-6 md:px-12 py-16 flex flex-col items-center gap-12 z-[1000]'>
 
         {/* Section Title */}
         <h2 className='text-2xl md:text-3xl font-bold tracking-wider text-white'>

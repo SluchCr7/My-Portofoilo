@@ -25,27 +25,32 @@ export const techIcons = {
 
 
 export const services = [
-    {
-        icon : <CiGlobe />,
-        name: "Web Development",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae."
-    },
-    {
-        icon : <CiImageOn />,
-        name: "UI / UX Design",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae."
-    },
-    {
-        icon : <CiServer />,
-        name: "Back End Development",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae."
-    },
-    {
-        icon : <IoMdColorPalette />,
-        name: "Front End Development",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae."
-    },
-]
+  {
+    icon: <CiGlobe />,
+    name: "Web Development",
+    description:
+      "Building dynamic, responsive, and scalable websites using the latest web technologies to ensure seamless user experiences across all devices.",
+  },
+  {
+    icon: <CiImageOn />,
+    name: "UI / UX Design",
+    description:
+      "Crafting intuitive user interfaces and engaging user experiences through thoughtful design systems, wireframes, and interactive prototypes.",
+  },
+  {
+    icon: <CiServer />,
+    name: "Back End Development",
+    description:
+      "Developing secure, efficient, and scalable server-side logic, RESTful APIs, and database architectures to power web and mobile applications.",
+  },
+  {
+    icon: <IoMdColorPalette />,
+    name: "Front End Development",
+    description:
+      "Translating designs into pixel-perfect interfaces using modern frameworks, animations, and performance optimization techniques.",
+  },
+];
+
 
 
 export const reviews = [
@@ -82,10 +87,10 @@ export const reviews = [
 ];
 
 export const links = [
-    { id: 1, title: "Home", url: "/" },
+    { id: 1, title: "Home", url: "#Home" },
     { id: 2, title: "About", url: "#About" },
     { id: 3, title: "Projects", url: "#Projects" },
-    { id: 4, title: "Contact", url: "#Contact" },
+    { id: 4, title: "Reviews", url: "#Reviews" },
 ];
 export const projects = [
   {

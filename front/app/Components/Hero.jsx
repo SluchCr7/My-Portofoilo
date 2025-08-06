@@ -8,7 +8,7 @@ import Link from 'next/link';
 import { icons } from '@/lib/Data';
 const Hero = () => {
   return (
-    <div className='relative pt-36 pb-20 min-h-[100vh]'>
+    <div id="home" className='relative pt-36 pb-20 min-h-[100vh]'>
       
       {/* Spotlights */}
       <div>
@@ -18,7 +18,7 @@ const Hero = () => {
       </div>
 
       {/* Background Grid */}
-      <div className="absolute top-0 left-0 z-0 flex h-full w-full items-center justify-center bg-white dark:bg-Black-100">
+      <div className="absolute top-0 left-0 bottom-0 z-0 flex h-full w-full items-center justify-center bg-white dark:bg-Black-100">
         <div
           className={cn(
             "absolute inset-0",
@@ -52,7 +52,7 @@ const Hero = () => {
 
           {/* CTA Button */}
           <button className="mt-6 px-6 py-2 text-sm md:text-base font-semibold bg-blue-600 hover:bg-blue-700 text-white rounded-xl shadow-lg transition-all duration-300">
-            Explore My Work
+            <Link href="#Projects">Explore My Work</Link>
           </button>
           <div className='absolute -bottom-28 flex items-center gap-10'>
             {icons.map(({link , Icon} , idx) => (
