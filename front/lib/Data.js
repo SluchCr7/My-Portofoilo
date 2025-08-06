@@ -94,12 +94,12 @@ export const links = [
 ];
 export const projects = [
   {
-    img: "/Projects/Proj1.png",
+    img: "/Projects/Playtactic.png",
     name: "PlayTactic",
     description: "A football-themed quiz game based on challenges, targeting football fans, with a point system and ranking.",
     tools: ["javascript", "nextjs", "tailwind"],
     finishedAt: "May 2024",
-    github: "https://github.com/your-username/playtactic",
+    github: "https://github.com/SluchCr7/Challenge",
     preview: "https://playtactic.vercel.app",
     details: "Includes authentication using JWT and MongoDB, with an interactive user interface built using Tailwind CSS.",
     duration: "3 weeks",
@@ -113,13 +113,13 @@ export const projects = [
     status: "Completed"
   },
   {
-    img: "/Projects/Proj2.png",
+    img: "/Projects/Sluch.png",
     name: "My Portfolio",
     description: "My personal website to showcase projects and skills, with a modern and fully dark theme.",
     tools: ["nextjs", "tailwind"],
     finishedAt: "August 2025",
-    github: "https://github.com/your-username/portfolio",
-    preview: "https://ahmed-portfolio.vercel.app",
+    github: "https://github.com/SluchCr7/My-Portofoilo",
+    preview: "https://sluch.vercel.app",
     details: "Fully responsive, includes animated texts and images, and a project slider. Built with Next.js and Tailwind.",
     duration: "1 week",
     features: [
@@ -132,13 +132,13 @@ export const projects = [
     status: "Completed"
   },
   {
-    img: "/Projects/Proj3.png",
+    img: "/Projects/Taskify.png",
     name: "Taskify",
     description: "A personal task management app with a dashboard and drag-and-drop functionality.",
     tools: ["javascript", "nextjs", "tailwind" , "figma"],
     finishedAt: "March 2025",
-    github: "https://github.com/your-username/taskify",
-    preview: "https://taskify-app.vercel.app",
+    github: "https://github.com/SluchCr7/Todo-List-MERN-Stack-",
+    preview: "https://taskify-khaki-nu.vercel.app",
     details: "UI design inspired by Figma, supports adding, editing, and deleting tasks using localStorage.",
     duration: "5 days",
     features: [
@@ -151,13 +151,13 @@ export const projects = [
     status: "Completed"
   },
   {
-    img: "/Projects/Proj4.png",
+    img: "/Projects/Zocial.png",
     name: "Zocial",
     description: "A social media app similar to Twitter, allowing account creation, posting, and following users.",
     tools: ["javascript", "nextjs", "tailwind" , "nodejs", "mongodb"],
     finishedAt: "July 2025",
-    github: "https://github.com/your-username/zocial",
-    preview: "https://zocial.vercel.app",
+    github: "https://github.com/SluchCr7/Social-Media",
+    preview: "https://zocial-eight.vercel.app",
     details: "Includes user relationships (follow/unfollow), auth system, and image storage via Cloudinary.",
     duration: "4 weeks",
     features: [
@@ -170,13 +170,13 @@ export const projects = [
     status: "In Progress"
   },
   {
-    img: "/Projects/Proj5.png",
+    img: "/Projects/Cryptova.png",
     name: "Cryptova",
     description: "A crypto information app displaying real-time prices and market analysis with charts.",
     tools: ["javascript", "nextjs", "tailwind"],
     finishedAt: "February 2025",
-    github: "https://github.com/your-username/cryptova",
-    preview: "https://cryptova.vercel.app",
+    github: "https://github.com/SluchCr7/Password-Generator-Cryptova-",
+    preview: "https://cryptova-ruby.vercel.app",
     details: "Uses real-time API from CoinGecko to display data. Includes search and categorization features.",
     duration: "1.5 weeks",
     features: [
@@ -189,13 +189,13 @@ export const projects = [
     status: "Completed"
   },
   {
-    img: "/Projects/Proj6.png",
+    img: "/Projects/Fashionista.png",
     name: "Fashonista",
     description: "An e-commerce store for women's clothing, featuring product filters and a shopping cart.",
     tools: ["javascript", "nextjs", "tailwind" , "figma" , "mongodb"  ],
     finishedAt: "June 2025",
-    github: "https://github.com/your-username/fashonista",
-    preview: "https://fashonista.vercel.app",
+    github: "https://github.com/SluchCr7/fashionista",
+    preview: "https://fashionista-flax.vercel.app",
     details: "Attractive and responsive UI, mock payment support, and smart product recommendations.",
     duration: "2.5 weeks",
     features: [

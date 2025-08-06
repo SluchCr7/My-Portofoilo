@@ -20,7 +20,7 @@ const Project = ({project , setProject , idx}) => {
 
     {/* Project Name */}
     <h3 className='text-lg text-white font-semibold mt-4'>{project.name}</h3>
-    <p className='text-sm text-gray-300 mt-2'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate molestias voluptas exercitationem! Iure unde explicabo sequi praesentium ad facere ea earum, minus, cum ipsa nemo non. Maiores debitis amet libero.</p>
+    <p className='text-sm text-gray-300 mt-2'>{project.description}</p>
     {/* Tools & Link */}
     <div className='mt-3 flex items-center justify-between'>
 
