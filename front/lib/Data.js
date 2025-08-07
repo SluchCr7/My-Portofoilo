@@ -56,33 +56,33 @@ export const services = [
 export const reviews = [
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Adrian exceeded our expectations. He not only delivered on time but also brought creative solutions we hadn't even considered. His technical skills are matched by his communication and professionalism.",
+    name: "Sophie Martinez",
+    title: "Product Manager at NovaCore",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Working with Adrian was a game-changer. He understood our vision immediately and turned it into a sleek, responsive site that our users love. His attention to detail is impressive.",
+    name: "Liam Chen",
+    title: "Founder of PixelBloom Studio",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Adrian combines strong development skills with a deep understanding of user experience. Our collaboration was seamless, and the end product speaks for itself.",
+    name: "Aisha Rahman",
+    title: "UX Lead at ClearPath Digital",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "From the first meeting, Adrian was fully invested in our project. His ideas helped shape the direction we took, and the final result was more than we hoped for.",
+    name: "Jonas Müller",
+    title: "CTO at BrightWave Solutions",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Adrian brings clarity, structure, and enthusiasm to every project. His ability to translate business goals into technical solutions is exceptional. Highly recommended!",
+    name: "Noura Al-Farsi",
+    title: "CEO of Al-Farsi Innovations",
   },
 ];
 

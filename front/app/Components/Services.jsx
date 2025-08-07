@@ -1,6 +1,7 @@
 import React from 'react'
 // import { MdOutlineDesignServices } from "react-icons/md";
 import { services } from '@/lib/Data';
+import { FocusCards } from './ui/focus-cards';
 const Services = () => {
 
   return (
@@ -8,10 +9,10 @@ const Services = () => {
       {/* Section Title */}
       <h2 className='text-2xl md:text-3xl font-bold tracking-wider text-white'>
             My Services That <span className="text-purple-400">Provide To You</span>
-          </h2>
-
+      </h2>
+      <FocusCards cards={services}/>
       {/* Services Container */}
-      <div className="w-full grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
+      {/* <div className="w-full grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
         {
             services.map((service, index) => (
                 <div key={index} className="bg-white/5 backdrop-blur-md border border-white/10 shadow-xl p-8 rounded-2xl flex flex-col gap-4 text-white">
@@ -21,7 +22,7 @@ const Services = () => {
                 </div>
             ))
         }
-      </div>
+      </div> */}
     </div>
   )
 }
