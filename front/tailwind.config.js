@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       animation: {
         spotlight: "spotlight 2s ease .75s 1 forwards",
-        scroll: "scroll var(--animation-duration) linear var(--animation-direction)",
+        scroll: "scroll 40s linear infinite", // default  
       },
       keyframes: {
         spotlight: {
@@ -24,7 +24,7 @@ module.exports = {
         },
         scroll: {
           "0%": { transform: "translateX(0%)" },
-          "100%": { transform: "translateX(-50%)" },
+          "100%": { transform: "translateX(-50%)" }, // يجب أن تكرر المحتوى مرتين كما فعلنا
         },
       },
       colors: {

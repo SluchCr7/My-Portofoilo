@@ -5,7 +5,7 @@ const Project = ({project , setProject , idx}) => {
   return (
     <div
     key={idx}
-    className='bg-white/5 border border-white/10 backdrop-blur-md rounded-xl p-4 shadow-md hover:shadow-xl hover:scale-[1.01] transition-all duration-300 group'
+    className='bg-white/5 border  border-white/10 backdrop-blur-md rounded-xl p-4 shadow-md hover:shadow-xl hover:scale-[1.1] transition-all duration-700 group'
     >
     {/* Project Image */}
     <div className='rounded-lg overflow-hidden'>

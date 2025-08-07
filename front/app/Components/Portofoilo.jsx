@@ -8,7 +8,9 @@ import Project from './Project'
 const Portofoilo = ({project , setProject}) => {
   const [showNum , setShowNum] = useState(3)
 
-
+  const handleShow = () => {
+   
+  }
   return (
     <div id="Projects" className='w-full bg-Black-100 px-6 md:px-12 py-20 flex flex-col items-center gap-12'>
 
@@ -25,8 +27,11 @@ const Portofoilo = ({project , setProject}) => {
             <Project key={idx} project={proj} setProject={setProject} />
         ))}
       </div>
-        <button onClick={() => setShowNum((prev) => Math.min(prev + 3, projects.length))} className="mt-6 px-8 py-3 rounded-lg bg-Accent-100 text-Black font-semibold shadow-md hover:bg-Accent-200 transition-all duration-300">
-          Show More
+        <button 
+          onClick={() => showNum === projects.length ? setShowNum(3) : setShowNum(projects.length)}
+          className="mt-6 px-8 py-3 rounded-lg bg-Accent-100 text-Black font-semibold shadow-md hover:bg-Accent-200 transition-all duration-300"
+        >
+          {showNum === projects.length ? "Show Less" : "Show More"}
         </button>
     </div>
   )

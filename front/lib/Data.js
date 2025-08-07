@@ -223,10 +223,10 @@ export const tools = [
 ]
 
 export const stats = [
-{ num: 12, text: "Years of Experience" },
-{ num: 25, text: "Projects Completed" },
-{ num: 10, text: "Technologies Mastered" },
-{ num: 200, text: "Code Commits" },
+  { num: 4, text: "Years of Experience" },
+  { num: 12, text: "Projects Completed" },
+  { num: 8, text: "Technologies Mastered" },
+  { num: 200, text: "Code Commits" },
 ]
 
 export const icons = [
