@@ -57,20 +57,25 @@ const GridOptions = ({setIsOpen}) => {
         </div>
 
         {/* Column containing two stacked blocks */}
-        <div className="md:col-span-3 lg:col-span-3  flex flex-col gap-4 w-full">
-          <div className="bg-gradient-to-br from-purple-600 via-indigo-600 to-blue-600 rounded-xl h-full p-6 text-white w-full flex items-center justify-center flex-col gap-4 shadow-lg">
+        <div className="md:col-span-3 lg:col-span-3 flex flex-col gap-4 w-full">
+          <div className="bg-gradient-to-br from-Black-100 via-Primary-200 to-Black-200 rounded-xl h-full p-6 text-white w-full flex items-center justify-center flex-col gap-4 shadow-lg">
             <h3 className="text-2xl font-semibold">Download My CV</h3>
-            <button className="px-6 py-2 bg-Black-100 text-white font-medium rounded-lg hover:bg-blue-100 transition">
+            <button className="px-6 py-2 bg-Black-100 text-white font-medium rounded-lg hover:bg-Primary-100 transition">
               <a href="/Profile.pdf" download className="btn">Download CV</a>
             </button>
           </div>
-          <div className="bg-gradient-to-br from-purple-600 via-indigo-600 to-blue-600 rounded-xl h-full p-6 text-white w-full flex items-center justify-center flex-col gap-4 shadow-lg">
+
+          <div className="bg-gradient-to-br from-Gray-100 via-Primary-200 to-Gray-200 rounded-xl h-full p-6 text-white w-full flex items-center justify-center flex-col gap-4 shadow-lg">
             <h3 className="text-2xl font-semibold">Do You Want to start ?</h3>
-            <button onClick={()=> setIsOpen(true)} className="px-6 py-2 bg-Black-100 text-white font-medium rounded-lg hover:bg-blue-100 transition">
+            <button
+              onClick={() => setIsOpen(true)}
+              className="px-6 py-2 bg-Black-100 text-white font-medium rounded-lg hover:bg-Primary-100 transition"
+            >
               Contact With Me
             </button>
           </div>
         </div>
+
 
         <div className="md:col-span-3 lg:col-span-3 h-[60vh] relative overflow-hidden bg-Black-100 border border-Black-300 rounded-xl w-full">
           {/* الصورة الرئيسية */}
