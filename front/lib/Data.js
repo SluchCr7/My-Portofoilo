@@ -206,6 +206,25 @@ export const projects = [
       "Suggested products"
     ],
     status: "Completed"
+  },
+  {
+    img: "/Projects/zamalek.png",
+    name: "Zamalek Website",
+    description: "A website for zamalek football club with a responsive and attractive UI.",
+    tools: ["javascript", "nextjs", "tailwind" , "figma" , "mongodb" , "nodejs" , "expressjs" ],
+    finishedAt: "August 2025",
+    github: "https://github.com/SluchCr7/zamalek-Offecial-Website",
+    preview: "https://zamalekclub.vercel.app",
+    details: "Attractive and responsive UI, Show History By Progress , make auth system",
+    duration: "3 weeks",
+    features: [
+      "Responsive and attractive UI",
+      "Show History By Progress",
+      "Admin panel for questions",
+      "Responsive and animated UI",
+      "MongoDB-based data structure"
+    ],
+    status: "Completed"
   }
 ];
 
