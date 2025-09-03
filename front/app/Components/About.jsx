@@ -86,7 +86,7 @@ const About = () => {
         {/* صورة شخصية */}
         <div className="flex justify-center">
           <Image
-            src="/me.jpg" // ضع صورتك هنا
+            src="/Home.jpg" // ضع صورتك هنا
             alt="My Photo"
             width={280}
             height={280}
