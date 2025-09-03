@@ -195,7 +195,7 @@ export const projects = [
     tools: ["javascript", "nextjs", "tailwind" , "figma" , "mongodb"  ],
     finishedAt: "June 2025",
     github: "https://github.com/SluchCr7/fashionista",
-    preview: "https://fashionista-flax.vercel.app",
+    preview: "https://fashionista-two.vercel.app",
     details: "Attractive and responsive UI, mock payment support, and smart product recommendations.",
     duration: "2.5 weeks",
     features: [
