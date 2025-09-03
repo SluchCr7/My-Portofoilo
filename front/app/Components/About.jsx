@@ -68,7 +68,6 @@ import Image from 'next/image'
 import React from 'react'
 import CountUp from "react-countup"
 import { motion } from "framer-motion"
-import { Button } from "@/components/ui/button"
 
 const About = () => {
   return (
@@ -107,9 +106,9 @@ const About = () => {
             My focus is clean code, performance, and scalability — creating solutions that not only work but also inspire.
           </p>
           <div className="mt-4">
-            <Button className="bg-Primary text-white px-6 py-2 rounded-xl shadow-lg hover:scale-105 transition">
+            <button className="bg-Primary text-white px-6 py-2 rounded-xl shadow-lg hover:scale-105 transition">
               Let’s Work Together 🚀
-            </Button>
+            </button>
           </div>
         </div>
       </motion.div>
