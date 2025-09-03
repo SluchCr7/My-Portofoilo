@@ -225,7 +225,26 @@ export const projects = [
       "MongoDB-based data structure"
     ],
     status: "Completed"
-  }
+  },
+  {
+    img: "/Projects/quran.png",
+    name: "Quran Islam Website",
+    description: "This project is an Islamic web application created to provide Muslims around the world with easy access to two essential features of daily life: accurate prayer times and the Holy Quran. The goal of this project is to deliver a clean, user-friendly, and responsive platform that helps Muslims stay connected with their faith.",
+    tools: ["javascript", "nextjs", "tailwind" , "figma" , "mongodb" , "nodejs" , "expressjs" ],
+    finishedAt: "August 2025",
+    github: "https://github.com/SluchCr7/Islam-Quran",
+    preview: "https://islam-roan.vercel.app",
+    details: "Attractive and responsive UI, Show History By Progress , make auth system",
+    duration: "3 weeks",
+    features: [
+      "Responsive and attractive UI",
+      "Show History By Progress",
+      "Admin panel for questions",
+      "Responsive and animated UI",
+      "MongoDB-based data structure"
+    ],
+    status: "Completed"
+  },
 ];
 
 
