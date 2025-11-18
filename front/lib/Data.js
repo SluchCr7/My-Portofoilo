@@ -245,6 +245,39 @@ export const projects = [
     ],
     status: "Completed"
   },
+  {
+    img: "/Projects/Landing.png",
+    name: "Devion Landing Page",
+    description: "The project is a modern, responsive landing page designed for a software solutions company. It is built using React and Next.js, following clean code practices and a component-based architecture. The landing page aims to present the company’s services, features, pricing plans, customer testimonials, and contact information in a visually appealing and user-friendly way.The application uses Next.js for optimized routing, server-side rendering (SSR), and improved performance. All UI elements are built as reusable React components to ensure scalability and easy maintenance. The design focuses on simplicity, clarity, and fast user interaction across all devices.",
+    tools: ["javascript", "nextjs", "tailwind" , "Framer motion" ],
+    finishedAt: "November 2025",
+    github: "https://github.com/SluchCr7/Deveion",
+    preview: "https://deveion.vercel.app",
+    details: "Attractive and responsive UI, Show History By Progress , make auth system",
+    duration: "2 Days",
+    features: [
+      "Responsive and attractive UI",
+      "Responsive and animated UI",
+      
+    ],
+    status: "Completed"
+  },
+  {
+    img: "/Projects/mens.png",
+    name: "Sheikh Al-Minshawi website",
+    description: "“Sheikh Muhammad Siddiq Al-Minshawi Website” is a modern and immersive digital platform built using Next.js and Tailwind CSS, designed to present the timeless beauty of the Sheikh’s Qur’anic recitations with exceptional clarity and performance.",
+    tools: ["javascript", "nextjs", "tailwind" , "Framer motion" ],
+    finishedAt: "Nov 2025",
+    github: "https://github.com/SluchCr7/El-Menshawy",
+    preview: "https://el-menshawy.vercel.app/",
+    details: "Attractive and responsive UI, Show History By Progress , make auth system",
+    duration: "1 weak",
+    features: [
+      "Responsive and attractive UI",
+      "Responsive and animated UI",
+    ],
+    status: "Completed"
+  },
 ];
 
 
