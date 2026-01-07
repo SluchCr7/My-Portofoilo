@@ -3,13 +3,13 @@ import React from 'react'
 import { Spotlight } from './ui/Spotlight'
 import { cn } from "@/lib/utils";
 import { TextGenerateEffect } from './ui/text-generate-effect';
-import { FaGithub , FaLinkedin , FaInstagram , FaTwitter, FaFacebook } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaInstagram, FaTwitter, FaFacebook } from 'react-icons/fa';
 import Link from 'next/link';
 import { icons } from '@/lib/Data';
 const Hero = () => {
   return (
     <div id="home" className='relative pt-36 pb-20 min-h-[100vh]'>
-      
+
       {/* Spotlights */}
       <div>
         <Spotlight className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen" fill="blue" />
@@ -35,29 +35,35 @@ const Hero = () => {
         <div className='max-w-[90vw] md:max-w-2xl lg:max-w-[60vw] text-center flex flex-col items-center gap-4'>
 
           {/* Subheading */}
-          <h1 className='text-xs md:text-sm tracking-[6px] uppercase font-semibold text-blue-500'>
-            Dynamic Web Pages Developer
+          <h1 className='text-xs md:text-sm tracking-[6px] uppercase font-bold text-blue-400 mb-4'>
+            Professional MERN Stack Developer
           </h1>
 
           {/* Main heading with animation */}
           <TextGenerateEffect
-            className='text-center text-[38px] md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-snug text-white drop-shadow-[0_0_15px_rgba(59,130,246,0.2)]'
-            words='Building Modern Web Solutions with React & Node'
+            className='text-center text-[40px] md:text-5xl lg:text-7xl font-bold tracking-tight leading-tight text-white drop-shadow-2xl'
+            words='Crafting Exceptional Digital Experiences with Precision'
           />
 
           {/* Description */}
-          <p className='pt-3 text-gray-300 text-sm md:text-base lg:text-xl max-w-xl'>
-            I&apos;m <span className="text-blue-400 font-medium">Sluch</span> and I bring full-stack web applications to life with performance and style.
+          <p className='pt-6 text-gray-200 text-sm md:text-lg lg:text-xl max-w-2xl leading-relaxed'>
+            I&apos;m <span className="text-blue-400 font-bold">Sluch</span>, a dedicated Website Developer specializing in the MERN Stack. I transform complex requirements into seamless, high-performance web applications that drive success.
           </p>
 
           {/* CTA Button */}
-          <button className="mt-6 px-6 py-2 text-sm md:text-base font-semibold bg-blue-600 hover:bg-blue-700 text-white rounded-xl shadow-lg transition-all duration-300">
-            <Link href="#Projects">Explore My Work</Link>
-          </button>
-          <div className='absolute -bottom-28 flex items-center gap-10'>
-            {icons.map(({link , Icon} , idx) => (
-              <Link href={link} key={idx} className="text-lg text-gray-300 hover:text-gray-400 transition-all duration-300" >
-                <Icon/>
+          <div className="mt-10 flex flex-col md:flex-row gap-4 items-center">
+            <button className="px-8 py-3 text-sm md:text-base font-semibold bg-blue-600 hover:bg-blue-700 text-white rounded-full shadow-[0_4px_14px_0_rgba(37,99,235,0.39)] hover:shadow-[0_6px_20px_rgba(37,99,235,0.23)] transition-all duration-300 transform hover:-translate-y-1">
+              <Link href="#Projects">View Projects</Link>
+            </button>
+            <button className="px-8 py-3 text-sm md:text-base font-semibold border-2 border-gray-600 hover:border-gray-500 text-gray-300 hover:text-white rounded-full transition-all duration-300">
+              <Link href="#Contact">Contact Me</Link>
+            </button>
+          </div>
+
+          <div className='absolute -bottom-32 flex items-center gap-8'>
+            {icons.map(({ link, Icon }, idx) => (
+              <Link href={link} key={idx} className="text-2xl text-gray-400 hover:text-blue-400 transition-all duration-300 transform hover:scale-110" >
+                <Icon />
               </Link>
             ))}
           </div>

@@ -14,8 +14,8 @@ const Portfolio = ({ setProject }) => {
   return (
     <div id="Projects" className="w-full bg-Black-100 px-6 md:px-12 py-20 flex flex-col items-center gap-12">
       {/* Section Title */}
-      <h2 className="text-2xl md:text-3xl font-bold tracking-wider text-white">
-        Small Collection Of <span className="text-purple-400">My Work</span>
+      <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-white mb-8">
+        Featured <span className="text-purple-400">Projects</span>
       </h2>
 
       {/* Projects Grid */}

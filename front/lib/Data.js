@@ -2,7 +2,7 @@ import { CiGlobe } from "react-icons/ci";
 import { CiServer } from "react-icons/ci";
 import { CiImageOn } from "react-icons/ci";
 import { IoMdColorPalette } from "react-icons/io";
-import { FaGithub , FaLinkedin , FaInstagram , FaTwitter, FaFacebook } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaInstagram, FaTwitter, FaFacebook } from 'react-icons/fa';
 
 // techIcons.tsx
 import { FaJsSquare, FaNodeJs } from "react-icons/fa";
@@ -27,27 +27,27 @@ export const techIcons = {
 export const services = [
   {
     icon: <CiGlobe />,
-    name: "Web Development",
+    name: "Full Stack Web Development",
     description:
-      "Building dynamic, responsive, and scalable websites using the latest web technologies to ensure seamless user experiences across all devices.",
+      "Delivering end-to-end web solutions using the MERN stack. I build robust, scalable, and high-performance applications tailored to meet your business objectives, ensuring seamless functionality from database to user interface.",
   },
   {
     icon: <CiImageOn />,
     name: "UI / UX Design",
     description:
-      "Crafting intuitive user interfaces and engaging user experiences through thoughtful design systems, wireframes, and interactive prototypes.",
+      "Designing user-centric interfaces that are visually stunning and highly intuitive. I focus on creating seamless user journeys, wireframes, and prototypes that enhance engagement and satisfaction.",
   },
   {
     icon: <CiServer />,
-    name: "Back End Development",
+    name: "Backend Architecture",
     description:
-      "Developing secure, efficient, and scalable server-side logic, RESTful APIs, and database architectures to power web and mobile applications.",
+      "Architecting secure and efficient server-side systems. I specialize in RESTful API development, database optimization (MongoDB), and server management to support complex application workflows.",
   },
   {
     icon: <IoMdColorPalette />,
-    name: "Front End Development",
+    name: "Frontend Engineering",
     description:
-      "Translating designs into pixel-perfect interfaces using modern frameworks, animations, and performance optimization techniques.",
+      "Transforming creative designs into responsive, pixel-perfect web experiences. Utilizing modern frameworks like Next.js and React, I ensure your application looks exceptional and performs flawlessly across all devices.",
   },
 ];
 
@@ -56,241 +56,265 @@ export const services = [
 export const reviews = [
   {
     quote:
-      "Adrian exceeded our expectations. He not only delivered on time but also brought creative solutions we hadn't even considered. His technical skills are matched by his communication and professionalism.",
-    name: "Sophie Martinez",
-    title: "Product Manager at NovaCore",
+      "Sluch delivered a solution that completely transformed our workflow. The attention to detail in the backend logic and the intuitive frontend design made adoption effortless for our team.",
+    name: "Ethan Wright",
+    title: "Operations Director at TechFlow",
   },
   {
     quote:
-      "Working with Adrian was a game-changer. He understood our vision immediately and turned it into a sleek, responsive site that our users love. His attention to detail is impressive.",
-    name: "Liam Chen",
-    title: "Founder of PixelBloom Studio",
+      "An exceptional developer who understands both the code and the business goals. The e-commerce platform built for us is fast, secure, and has significantly boosted our sales.",
+    name: "Sophia Carter",
+    title: "Founder of LuxeAura",
   },
   {
     quote:
-      "Adrian combines strong development skills with a deep understanding of user experience. Our collaboration was seamless, and the end product speaks for itself.",
-    name: "Aisha Rahman",
-    title: "UX Lead at ClearPath Digital",
+      "Professional, punctual, and incredibly skilled. The MERN stack expertise brought our complex project to life, handling data with ease while maintaining a smooth user experience.",
+    name: "Daniel Kim",
+    title: "Lead Engineer at DataSphere",
   },
   {
     quote:
-      "From the first meeting, Adrian was fully invested in our project. His ideas helped shape the direction we took, and the final result was more than we hoped for.",
-    name: "Jonas Müller",
-    title: "CTO at BrightWave Solutions",
+      "The comprehensive update to our legacy system was handled with great care. The transition was smooth, and the new features have added immense value to our service offering.",
+    name: "Olivia Bennett",
+    title: "Product Manager at InnovateX",
   },
   {
     quote:
-      "Adrian brings clarity, structure, and enthusiasm to every project. His ability to translate business goals into technical solutions is exceptional. Highly recommended!",
-    name: "Noura Al-Farsi",
-    title: "CEO of Al-Farsi Innovations",
+      "A true partner in development working with Sluch. The ability to translate our conceptual ideas into a fully functional, high-performance web application was impressive. Highly recommended.",
+    name: "Michael Ross",
+    title: "CEO of StartUp Inc.",
   },
 ];
 
 export const links = [
-    { id: 1, title: "Home", url: "#Home" },
-    { id: 2, title: "About", url: "#About" },
-    { id: 3, title: "Projects", url: "#Projects" },
-    { id: 4, title: "Reviews", url: "#Reviews" },
+  { id: 1, title: "Home", url: "#Home" },
+  { id: 2, title: "About", url: "#About" },
+  { id: 3, title: "Projects", url: "#Projects" },
+  { id: 4, title: "Reviews", url: "#Reviews" },
 ];
 export const projects = [
   {
     img: "/Projects/Playtactic.png",
     name: "PlayTactic",
-    description: "A football-themed quiz game based on challenges, targeting football fans, with a point system and ranking.",
+    description: "An engaging football-themed quiz platform designed to challenge fans with tiered difficulty levels, complete with a competitive ranking system.",
     tools: ["javascript", "nextjs", "tailwind"],
     finishedAt: "May 2024",
     github: "https://github.com/SluchCr7/Challenge",
     preview: "https://playtactic.vercel.app",
-    details: "Includes authentication using JWT and MongoDB, with an interactive user interface built using Tailwind CSS.",
+    details: "Features secure JWT authentication, real-time scoring updates, and a MongoDB backend for robust data management.",
     duration: "3 weeks",
     features: [
-      "User authentication with JWT",
-      "Points and ranking system",
-      "Admin panel for questions",
-      "Responsive and animated UI",
-      "MongoDB-based data structure"
+      "Secure JWT Authentication",
+      "Dynamic Leaderboard System",
+      "Admin Dashboard for Content",
+      "Interactive Animations",
+      "Scalable MongoDB Architecture"
     ],
     status: "Completed"
   },
   {
     img: "/Projects/Sluch.png",
     name: "My Portfolio",
-    description: "My personal website to showcase projects and skills, with a modern and fully dark theme.",
+    description: "A professional showcase of my development career, featuring a modern, dark-themed aesthetic and interactive elements to highlight my skills and projects.",
     tools: ["nextjs", "tailwind"],
     finishedAt: "August 2025",
     github: "https://github.com/SluchCr7/My-Portofoilo",
     preview: "https://sluch.vercel.app",
-    details: "Fully responsive, includes animated texts and images, and a project slider. Built with Next.js and Tailwind.",
+    details: "Built with Next.js for SEO optimization, featuring smooth transitions and a fully responsive layout using Tailwind CSS.",
     duration: "1 week",
     features: [
-      "Modern dark theme",
-      "Animated text and project slider",
-      "Fully responsive",
-      "Smooth section navigation",
-      "Project filtering"
+      "Sleek Dark Mode Design",
+      "Interactive Project Carousel",
+      "Fully Responsive Layout",
+      "Optimized Performance",
+      "Advanced Filtering System"
     ],
     status: "Completed"
   },
   {
     img: "/Projects/Taskify.png",
     name: "Taskify",
-    description: "A personal task management app with a dashboard and drag-and-drop functionality.",
-    tools: ["javascript", "nextjs", "tailwind" , "figma"],
+    description: "A streamlined task management application offering a drag-and-drop interface for organizing personal and professional workflows efficiently.",
+    tools: ["javascript", "nextjs", "tailwind", "figma"],
     finishedAt: "March 2025",
     github: "https://github.com/SluchCr7/Todo-List-MERN-Stack-",
     preview: "https://taskify-khaki-nu.vercel.app",
-    details: "UI design inspired by Figma, supports adding, editing, and deleting tasks using localStorage.",
+    details: "Implements local storage for data persistence, with a clean UI inspired by modern design principles.",
     duration: "5 days",
     features: [
-      "Drag and drop tasks",
-      "Add/edit/delete functionality",
-      "Persistent via localStorage",
-      "Figma-inspired UI",
-      "Single user setup"
+      "Intuitive Drag & Drop",
+      "CRUD Operations",
+      "Local Storage Persistence",
+      "Modern Minimalist UI",
+      "Workflow Organization"
     ],
     status: "Completed"
   },
   {
     img: "/Projects/Zocial.png",
     name: "Zocial",
-    description: "A social media app similar to Twitter, allowing account creation, posting, and following users.",
-    tools: ["javascript", "nextjs", "tailwind" , "nodejs", "mongodb"],
+    description: "A comprehensive social media platform enabling users to connect, share updates, and manage their digital presence with features similar to major networks.",
+    tools: ["javascript", "nextjs", "tailwind", "nodejs", "mongodb"],
     finishedAt: "July 2025",
     github: "https://github.com/SluchCr7/Social-Media",
     preview: "https://zocial-eight.vercel.app",
-    details: "Includes user relationships (follow/unfollow), auth system, and image storage via Cloudinary.",
+    details: "Incorporates a full follow/unfollow system, real-time feed updates, and optimized image handling via Cloudinary.",
     duration: "10 weeks",
     features: [
-      "User authentication",
-      "Follow/unfollow system",
-      "Post creation and feed",
-      "Profile editing",
-      "Cloudinary image upload"
+      "User Authentication & Security",
+      "Follow/Unfollow Logic",
+      "Dynamic Activity Feed",
+      "Profile Customization",
+      "Cloud Media Integration"
     ],
     status: "In Progress"
   },
   {
     img: "/Projects/Cryptova.png",
     name: "Cryptova",
-    description: "A crypto information app displaying real-time prices and market analysis with charts.",
+    description: "A real-time cryptocurrency tracker providing live market data, detailed analysis, and interactive charting for informed investment decisions.",
     tools: ["javascript", "nextjs", "tailwind"],
-    finishedAt: "Novamber 2024",
+    finishedAt: "November 2024",
     github: "https://github.com/SluchCr7/Password-Generator-Cryptova-",
     preview: "https://cryptova-ruby.vercel.app",
-    details: "Uses real-time API from CoinGecko to display data. Includes search and categorization features.",
+    details: "Integrates the CoinGecko API for live updates, featuring advanced search capabilities and category filtering.",
     duration: "1.5 weeks",
     features: [
-      "Live data from CoinGecko API",
-      "Interactive charts",
-      "Search and category filter",
-      "Dark theme",
-      "Responsive design"
+      "Live CoinGecko API Integration",
+      "Interactive Market Charts",
+      "Advanced Search & Filters",
+      "Responsive Dark Theme",
+      "Real-time Data Visualization"
     ],
     status: "Completed"
   },
   {
     img: "/Projects/Fashionista.png",
-    name: "Fashonista",
-    description: "An e-commerce store for women's clothing, featuring product filters and a shopping cart.",
-    tools: ["javascript", "nextjs", "tailwind" , "figma" , "mongodb"  ],
+    name: "Fashionista",
+    description: "A chic e-commerce platform for women's fashion, offering a seamless shopping experience with intuitive navigation and product discovery tools.",
+    tools: ["javascript", "nextjs", "tailwind", "figma", "mongodb"],
     finishedAt: "June 2025",
     github: "https://github.com/SluchCr7/fashionista",
     preview: "https://fashionista-two.vercel.app",
-    details: "Attractive and responsive UI, mock payment support, and smart product recommendations.",
+    details: "Features a responsive design, mock payment gateway integration, and an intelligent product recommendation engine.",
     duration: "4 weeks",
     features: [
-      "Product filtering",
-      "Shopping cart",
-      "Product detail page",
-      "Fake payment support",
-      "Suggested products"
+      "Smart Product Filtering",
+      "Dynamic Shopping Cart",
+      "Detailed Product Pages",
+      "Mock Payment Processing",
+      "Recommendation Engine"
     ],
     status: "Completed"
   },
   {
     img: "/Projects/zamalek.png",
-    name: "Zamalek Website",
-    description: "A website for zamalek football club with a responsive and attractive UI.",
-    tools: ["javascript", "nextjs", "tailwind" , "figma" , "mongodb" , "nodejs" , "expressjs" ],
+    name: "Zamalek SC Hub",
+    description: "The official-style digital home for Zamalek Sporting Club, celebrating its history and achievements with a modern, immersive web experience.",
+    tools: ["javascript", "nextjs", "tailwind", "figma", "mongodb", "nodejs", "expressjs"],
     finishedAt: "August 2025",
     github: "https://github.com/SluchCr7/zamalek-Offecial-Website",
     preview: "https://zamalek-eight.vercel.app",
-    details: "Attractive and responsive UI, Show History By Progress , make auth system",
+    details: "Includes a comprehensive history section, player profiles, and a secure authentication system for fan engagement.",
     duration: "6 weeks",
     features: [
-      "Responsive and attractive UI",
-      "Show History By Progress",
-      "Admin panel for questions",
-      "Responsive and animated UI",
-      "MongoDB-based data structure"
+      "Immersive History Timeline",
+      "Responsive Fan Interface",
+      "Secure Admin Control Panel",
+      "Player Statistics",
+      "Authentication System"
     ],
     status: "Completed"
   },
   {
     img: "/Projects/quran.png",
-    name: "Quran Islam Website",
-    description: "This project is an Islamic web application created to provide Muslims around the world with easy access to two essential features of daily life: accurate prayer times and the Holy Quran. The goal of this project is to deliver a clean, user-friendly, and responsive platform that helps Muslims stay connected with their faith.",
-    tools: ["javascript", "nextjs", "tailwind" , "figma" , "mongodb" , "nodejs" , "expressjs" ],
+    name: "Quran & Prayer",
+    description: "A spiritual companion app providing accurate prayer times and the Holy Quran, designed to facilitate daily worship with ease and accessibility.",
+    tools: ["javascript", "nextjs", "tailwind", "figma", "mongodb", "nodejs", "expressjs"],
     finishedAt: "August 2024",
     github: "https://github.com/SluchCr7/Islam-Quran",
     preview: "https://islam-roan.vercel.app",
-    details: "Attractive and responsive UI, Show History By Progress , make auth system",
+    details: "Focuses on a clean, distraction-free interface, offering reliable data and a responsive design for on-the-go access.",
     duration: "3 weeks",
     features: [
-      "Responsive and attractive UI",
-      "Show History By Progress",
-      "Admin panel for questions",
-      "Responsive and animated UI",
-      "MongoDB-based data structure"
+      "Accurate Prayer Times",
+      "Digital Holy Quran",
+      "Clean Reading Interface",
+      "Location-Based Calculations",
+      "Mobile-First Design"
     ],
     status: "Completed"
   },
   {
     img: "/Projects/Landing.png",
     name: "Devion Landing Page",
-    description: "The project is a modern, responsive landing page designed for a software solutions company. It is built using React and Next.js, following clean code practices and a component-based architecture. The landing page aims to present the company’s services, features, pricing plans, customer testimonials, and contact information in a visually appealing and user-friendly way.The application uses Next.js for optimized routing, server-side rendering (SSR), and improved performance. All UI elements are built as reusable React components to ensure scalability and easy maintenance. The design focuses on simplicity, clarity, and fast user interaction across all devices.",
-    tools: ["javascript", "nextjs", "tailwind" , "Framer motion" ],
+    description: "A high-conversion landing page for software solutions, showcasing services and pricing with a sleek, professional layout.",
+    tools: ["javascript", "nextjs", "tailwind", "Framer motion"],
     finishedAt: "November 2025",
     github: "https://github.com/SluchCr7/Deveion",
     preview: "https://deveion.vercel.app",
-    details: "Attractive and responsive UI, Show History By Progress , make auth system",
+    details: "Utilizes Framer Motion for engaging animations and Next.js for superior load times and SEO performance.",
     duration: "2 Days",
     features: [
-      "Responsive and attractive UI",
-      "Responsive and animated UI",
-      
+      "High-Performance Rendering",
+      "Engaging Motion Effects",
+      "Pricing Strategy Display",
+      "Optimized Call-to-Actions",
+      "Responsive Layout"
     ],
     status: "Completed"
   },
   {
     img: "/Projects/mens.png",
-    name: "Sheikh Al-Minshawi website",
-    description: "“Sheikh Muhammad Siddiq Al-Minshawi Website” is a modern and immersive digital platform built using Next.js and Tailwind CSS, designed to present the timeless beauty of the Sheikh’s Qur’anic recitations with exceptional clarity and performance.",
-    tools: ["javascript", "nextjs", "tailwind" , "Framer motion" ],
-    finishedAt: "Nov 2025",
+    name: "Sheikh Al-Minshawi Tribute",
+    description: "A dedicated platform honoring Sheikh Muhammad Siddiq Al-Minshawi, presenting his Quranic recitations in a high-quality audio interface.",
+    tools: ["javascript", "nextjs", "tailwind", "Framer motion"],
+    finishedAt: "November 2025",
     github: "https://github.com/SluchCr7/El-Menshawy",
     preview: "https://el-menshawy.vercel.app/",
-    details: "Attractive and responsive UI, Show History By Progress , make auth system",
-    duration: "1 weak",
+    details: "Features a serene, respectful design with seamless audio streaming and an accessible library of recitations.",
+    duration: "1 week",
     features: [
-      "Responsive and attractive UI",
-      "Responsive and animated UI",
+      "High-Quality Audio Streaming",
+      "Serene & Respectful UI",
+      "Comprehensive Recitation Library",
+      "Responsive Audio Player",
+      "Fast Content Delivery"
     ],
     status: "Completed"
+  },
+  {
+    img: "/Projects/JobsFinder.png",
+    name: "JobFinder Pro",
+    description: "A robust career platform connecting job seekers with top employers, featuring advanced search filters and profile management tools.",
+    tools: ["javascript", "nextjs", "tailwind", "Framer motion"],
+    finishedAt: "December 2025",
+    github: "https://github.com/SluchCr7/Jobs-Website",
+    preview: "https://jopfinder.vercel.app/",
+    details: "Supports detailed user profiles, resume uploads, and an employer dashboard for managing job postings and applications.",
+    duration: "2 weeks",
+    features: [
+      "Advanced Job Search",
+      "Candidate Profile Management",
+      "Employer Dashboard",
+      "Application Tracking",
+      "Real-time Alerts"
+    ],
+    status: "In Progress"
   },
 ];
 
 
 
 export const tools = [
-{ name: "React", icon : <FaReact /> },
-{ name: "Next.js", icon : <RiNextjsFill /> },
-{ name: "Tailwind", icon : <RiTailwindCssFill /> },
-{ name: "CSS",  icon : <IoLogoCss3 /> },
-{ name: "Figma",  icon : <SiFigma /> },
-{ name: "Javascript", icon : <FaJsSquare /> },
-{ name: "Node.js",  icon : <FaNodeJs /> },
-{ name: "MongoDB",  icon : <DiMongodb /> }
+  { name: "React", icon: <FaReact /> },
+  { name: "Next.js", icon: <RiNextjsFill /> },
+  { name: "Tailwind", icon: <RiTailwindCssFill /> },
+  { name: "CSS", icon: <IoLogoCss3 /> },
+  { name: "Figma", icon: <SiFigma /> },
+  { name: "Javascript", icon: <FaJsSquare /> },
+  { name: "Node.js", icon: <FaNodeJs /> },
+  { name: "MongoDB", icon: <DiMongodb /> }
 ]
 
 export const stats = [
@@ -301,29 +325,29 @@ export const stats = [
 ]
 
 export const icons = [
-    {
-      link : "https://github.com/SluchCr7",
-      Icon : FaGithub
-    },
-    {
-      link : "https://www.linkedin.com/in/sluch07",
-      Icon : FaLinkedin
-    },
-    {
-      link : "",
-      Icon : FaInstagram
-    },
-    {
-      link : "https://www.facebook.com/ahmed.abobakr.821836/",
-      Icon : FaFacebook
-    }
+  {
+    link: "https://github.com/SluchCr7",
+    Icon: FaGithub
+  },
+  {
+    link: "https://www.linkedin.com/in/sluch07",
+    Icon: FaLinkedin
+  },
+  {
+    link: "https://www.instagram.com",
+    Icon: FaInstagram
+  },
+  {
+    link: "https://www.facebook.com/ahmed.abobakr.821836/",
+    Icon: FaFacebook
+  }
 ]
 
 
 export const gridItems = [
   {
     id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
+    title: "I prioritize client collaboration, ensuring transparency and alignment ",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
@@ -333,7 +357,7 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "I'm very flexible with time zone communications",
+    title: "Flexible with time zones ensuring smooth communication",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
@@ -343,8 +367,8 @@ export const gridItems = [
   },
   {
     id: 3,
-    title: "My tech stack",
-    description: "I constantly try to improve",
+    title: "My Tech Stack",
+    description: "Constantly evolving",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-center",
