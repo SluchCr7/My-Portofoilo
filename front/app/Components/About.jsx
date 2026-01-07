@@ -73,7 +73,7 @@ const About = () => {
   return (
     <div
       id="About"
-      className="w-full px-6 md:px-12 py-20 flex flex-col items-center gap-20 relative bg-gradient-to-br from-black to-gray-900"
+      className="w-full px-6 md:px-12 py-20 flex flex-col items-center gap-20 relative"
     >
       {/* About Section */}
       <motion.div
