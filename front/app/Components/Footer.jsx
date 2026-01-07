@@ -9,10 +9,10 @@ const Footer = ({ setIsOpen }) => {
           Ready to Elevate Your Digital Presence?
         </h2>
         <p className="text-Gray-400 mt-4 text-sm md:text-base max-w-xl">
-          Reach out today and let's discuss how we can help you achieve your business goals with confidence.
+          Reach out today and let is discuss how we can help you achieve your business goals with confidence.
         </p>
         <button onClick={() => setIsOpen(true)} className="mt-8 px-10 py-4 rounded-full bg-Accent-100 text-Black font-bold shadow-lg hover:bg-Accent-200 hover:scale-105 transition-all duration-300">
-          Let's Get in Touch
+          Let is Get in Touch
         </button>
       </div>
 
