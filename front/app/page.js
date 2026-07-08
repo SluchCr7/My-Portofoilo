@@ -1,32 +1,103 @@
 'use client'
-import Image from "next/image";
+import React, { useState, useEffect } from 'react'
+import { motion, useScroll, useSpring } from 'framer-motion'
 import Hero from "./Components/Hero";
 import About from "./Components/About";
+import GridOptions from "./Components/GridOptions";
+import Services from "./Components/Services";
+import Experience from "./Components/Experience";
 import Portofoilo from "./Components/Portofoilo";
 import Reviews from "./Components/Reviews";
-import Footer from "./Components/Footer";
 import Contact from "./Components/Contact";
-import { useState } from "react";
-import Services from "./Components/Services";
+import Footer from "./Components/Footer";
 import ProjectView from "./Components/ProjectView";
-import GridOptions from "./Components/GridOptions";
+import { FiArrowUp } from 'react-icons/fi';
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false)
-  const [project , setProject] = useState({})
+  const [project, setProject] = useState({})
+  const [showTop, setShowTop] = useState(false)
+
+  const { scrollYProgress } = useScroll()
+  const scaleX = useSpring(scrollYProgress, { stiffness: 100, damping: 30, restDelta: 0.001 })
+
+  useEffect(() => {
+    const onScroll = () => setShowTop(window.scrollY > 600)
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
+
+  const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' })
+
   return (
-    <div className="flex flex-col items-center justify-center overflow-hidden mx-auto sm:px-10 px-5 relative bg-Black-100">
-      <div className="max-w-7xl w-full">
-        <Hero/>
-      </div>
-      <About />
-      <GridOptions setIsOpen={setIsOpen}/>
-      <Services/>
-      <Portofoilo setProject={setProject} project={project} />
-      <Reviews />
+    <div className="flex flex-col items-center overflow-hidden w-full bg-[#000319]">
+
+      {/* ── Scroll progress bar ── */}
+      <motion.div
+        className="fixed top-0 left-0 right-0 h-[3px] z-[9999]"
+        style={{ scaleX, background: 'linear-gradient(90deg, #6366f1, #8b5cf6, #3b82f6)', transformOrigin: '0%' }}
+      />
+
+      {/* ── Hero ── */}
+      <section className="w-full">
+        <Hero />
+      </section>
+
+      {/* ── About ── */}
+      <section className="w-full max-w-7xl">
+        <About />
+      </section>
+
+      {/* ── Bento Grid quick facts ── */}
+      <section className="w-full">
+        <GridOptions setIsOpen={setIsOpen} />
+      </section>
+
+      {/* ── Services ── */}
+      <section className="w-full max-w-7xl">
+        <Services />
+      </section>
+
+      {/* ── Experience & Education ── */}
+      <section className="w-full max-w-7xl">
+        <Experience />
+      </section>
+
+      {/* ── Portfolio ── */}
+      <section className="w-full max-w-7xl">
+        <Portofoilo setProject={setProject} />
+      </section>
+
+      {/* ── Reviews ── */}
+      <section className="w-full">
+        <Reviews />
+      </section>
+
+      {/* ── Footer + CTA ── */}
+      <section className="w-full">
+        <Footer isOpen={isOpen} setIsOpen={setIsOpen} />
+      </section>
+
+      {/* ── Overlays ── */}
       <Contact isOpen={isOpen} setIsOpen={setIsOpen} />
-      <ProjectView project={project} setProject={setProject}/>
-      <Footer isOpen={isOpen} setIsOpen={setIsOpen}/>
+      <ProjectView project={project} setProject={setProject} />
+
+      {/* ── Back to top ── */}
+      <motion.button
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{
+          opacity: showTop ? 1 : 0,
+          scale: showTop ? 1 : 0.8,
+          pointerEvents: showTop ? 'auto' : 'none'
+        }}
+        transition={{ duration: 0.25 }}
+        onClick={scrollToTop}
+        className="fixed bottom-8 right-8 z-[1500] w-12 h-12 rounded-2xl flex items-center justify-center text-white hover:-translate-y-1 transition-transform duration-200"
+        style={{ background: 'linear-gradient(135deg, #6366f1, #3b82f6)', boxShadow: '0 4px 20px rgba(99,102,241,0.4)' }}
+        aria-label="Back to top"
+      >
+        <FiArrowUp className="text-lg" />
+      </motion.button>
     </div>
   );
 }

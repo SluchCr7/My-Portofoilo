@@ -1,170 +1,242 @@
-// 'use client'
-// import { stats, tools } from '@/lib/Data'
-// import Image from 'next/image'
-// import React from 'react'
-// import CountUp from "react-countup"
-
-// const About = () => {
-//   return (
-//     <div id="About" className="w-full px-6 md:px-12 py-16 flex flex-col items-center gap-16 z-[1000] relative">
-//       {/* About Section */}
-//       <div className="w-full max-w-5xl bg-Black-200 backdrop-blur-md border border-Gray-200 shadow-xl p-8 rounded-2xl flex flex-col gap-4 text-white">
-//         <h2 className="text-2xl md:text-3xl font-bold tracking-wide">About Me</h2>
-//         <p className="text-Gray-400 text-sm leading-6 md:text-base w-full md:w-[80%]">
-//           I&apos;m a passionate full-stack developer with a strong foundation in modern web technologies. 
-//           I build scalable and interactive applications using the MERN stack and beyond. 
-//           From idea to deployment, I&apos;m committed to clean, efficient, and user-centered development.
-//         </p>
-//         <p className="text-Gray-400 text-sm leading-6 md:text-base w-full md:w-[80%]">
-//           Performance and scalability are always top priorities in my development process. I write clean, maintainable code with a focus on optimizing both frontend and backend systems.
-//         </p>
-//       </div>
-
-//       {/* Tools Section */}
-//       <div className="w-full max-w-5xl flex flex-col gap-6">
-//         <h2 className="text-xl md:text-2xl font-semibold text-white">🛠️ Essential Tools & Technologies</h2>
-//         <p className="text-sm text-Gray-400 w-full md:w-[80%]">
-//           Explore the technologies that power my development workflow and bring ideas to life.
-//         </p>
-//         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
-//           {tools.map((tool, idx) => (
-//             <div key={idx} className="flex items-center gap-3 bg-Black-100 backdrop-blur-sm border border-Gray-200 rounded-xl p-3 hover:scale-105 hover:shadow-xl transition-all duration-300">
-//               <div className="bg-Black-300 p-2 rounded-lg">
-//                 <span className="text-3xl">{tool.icon}</span>
-//               </div>
-//               <span className="text-white text-sm font-medium">{tool.name}</span>
-//             </div>
-//           ))}
-//         </div>
-//       </div>
-
-//       {/* Stats Section */}
-//       <div className="w-full max-w-5xl flex flex-col gap-6">
-//         <h2 className="text-xl md:text-2xl font-semibold text-white">📊 My Stats</h2>
-//         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-white">
-//           {stats.map((stat, i) => (
-//             <div key={i} className="bg-Black-100 border border-Gray-200 rounded-xl p-6 flex flex-col items-center gap-2 backdrop-blur-sm shadow-lg">
-//               <CountUp
-//                 end={stat.num}
-//                 duration={4}
-//                 delay={1}
-//                 className="text-4xl font-extrabold text-Primary"
-//               />
-//               <p className="text-sm text-Gray-400 text-center">{stat.text}</p>
-//             </div>
-//           ))}
-//         </div>
-//       </div>
-//     </div>
-//   )
-// }
-
-// export default About
-
-
 'use client'
 import { stats, tools } from '@/lib/Data'
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
 import CountUp from "react-countup"
 import { motion } from "framer-motion"
+import Link from 'next/link'
+import { FaMapMarkerAlt, FaGraduationCap, FaGlobeAfrica } from 'react-icons/fa'
+import { HiLightningBolt } from 'react-icons/hi'
+
+const skillLevels = [
+  { name: 'Next.js / React', level: 95, color: 'from-violet-600 to-blue-600' },
+  { name: 'Node.js / Express', level: 88, color: 'from-blue-600 to-cyan-500' },
+  { name: 'MongoDB / Databases', level: 85, color: 'from-emerald-500 to-teal-500' },
+  { name: 'UI/UX & Figma', level: 80, color: 'from-pink-500 to-rose-500' },
+  { name: 'TypeScript / JS', level: 90, color: 'from-amber-500 to-orange-500' },
+]
+
+const infoBadges = [
+  { icon: FaMapMarkerAlt, text: 'Egypt', color: 'text-violet-400' },
+  { icon: FaGraduationCap, text: 'CS Graduate', color: 'text-blue-400' },
+  { icon: FaGlobeAfrica, text: 'Remote-Friendly', color: 'text-emerald-400' },
+  { icon: HiLightningBolt, text: 'Fast Delivery', color: 'text-amber-400' },
+]
+
+const fadeUp = (delay = 0) => ({
+  initial: { opacity: 0, y: 40 },
+  whileInView: { opacity: 1, y: 0 },
+  transition: { duration: 0.7, delay },
+  viewport: { once: true },
+})
 
 const About = () => {
+  const [skillsVisible, setSkillsVisible] = useState(false)
+
   return (
-    <div
-      id="About"
-      className="w-full px-6 md:px-12 py-20 flex flex-col items-center gap-20 relative"
-    >
-      {/* About Section */}
+    <div id="About" className="w-full px-6 md:px-12 py-28 flex flex-col items-center gap-24 relative">
+
+      {/* Background accent */}
+      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-violet-900/8 blur-[120px] rounded-full pointer-events-none" />
+
+      {/* ── Section Header ── */}
+      <motion.div {...fadeUp(0)} className="text-center space-y-3">
+        <span className="tag-pill">About Me</span>
+        <h2 className="text-4xl md:text-5xl font-black font-space text-white leading-tight">
+          Passionate about{' '}
+          <span className="gradient-text">building things</span>
+        </h2>
+        <p className="text-gray-400 max-w-xl mx-auto text-base">
+          A full-stack developer who turns ideas into impactful, beautiful digital products.
+        </p>
+      </motion.div>
+
+      {/* ── Bio Card ── */}
       <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
-        className="w-full max-w-6xl grid md:grid-cols-2 gap-10 items-center bg-Black-200/60 backdrop-blur-md border border-Gray-200 shadow-xl p-10 rounded-2xl"
+        {...fadeUp(0.1)}
+        className="w-full max-w-6xl grid md:grid-cols-2 gap-10 lg:gap-14 items-center"
       >
         {/* Profile Image */}
-        <div className="flex justify-center">
-          <Image
-            src="/Home.jpg"
-            alt="Sluch - Full Stack Developer"
-            width={280}
-            height={280}
-            className="rounded-full shadow-2xl border-4 border-Primary object-cover transition-transform duration-500 hover:scale-105"
-          />
+        <div className="flex justify-center md:justify-end">
+          <div className="relative group w-fit">
+            {/* Glow ring */}
+            <div className="absolute -inset-1.5 rounded-3xl bg-gradient-to-r from-violet-600 via-blue-600 to-violet-600 blur-md opacity-40 group-hover:opacity-70 transition duration-700" />
+            <div className="relative w-64 h-72 md:w-72 md:h-80 rounded-3xl overflow-hidden border border-white/10 shadow-card">
+              <Image
+                src="/Home.jpg"
+                alt="Ahmed Sluch — Full Stack Developer"
+                fill
+                className="object-cover object-top scale-[1.02] group-hover:scale-[1.06] transition-transform duration-700"
+                priority
+              />
+              {/* Overlay gradient */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+            </div>
+
+            {/* Floating experience badge */}
+            <motion.div
+              animate={{ y: [0, -6, 0] }}
+              transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
+              className="absolute -bottom-5 -left-5 glass rounded-2xl px-4 py-3 border border-violet-500/30 shadow-glow-sm"
+            >
+              <p className="text-violet-300 text-xs font-medium">Experience</p>
+              <p className="text-white text-lg font-black font-space">4+ Years</p>
+            </motion.div>
+
+            {/* Floating projects badge */}
+            <motion.div
+              animate={{ y: [0, -6, 0] }}
+              transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut', delay: 1.5 }}
+              className="absolute -top-5 -right-5 glass rounded-2xl px-4 py-3 border border-blue-500/30 shadow-glow-sm"
+            >
+              <p className="text-blue-300 text-xs font-medium">Projects</p>
+              <p className="text-white text-lg font-black font-space">12+</p>
+            </motion.div>
+          </div>
         </div>
 
         {/* Text Content */}
-        <div className="flex flex-col gap-4 text-white">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-wide">About Me</h2>
-          <p className="text-Gray-400 text-base leading-7">
-            With a passion for digital innovation, I have dedicated myself to mastering the art of full-stack development.
-            My journey is defined by a relentless pursuit of excellence, turning complex challenges into elegant, user-centric solutions.
-            I bring a blend of creative vision and technical precision to every project I undertake.
-          </p>
-          <p className="text-Gray-400 text-base leading-7">
-            I specialize in building scalable, high-performance applications using the MERN stack.
-            My focus is on writing clean, maintainable code that drives business growth and delivers exceptional user experiences.
-          </p>
-          <div className="mt-4">
-            <button className="bg-Primary text-white px-8 py-3 rounded-xl shadow-[0_4px_14px_0_rgba(0,0,0,0.39)] hover:scale-105 transition-all duration-300 font-medium">
-              Let’s Collaborate 🚀
-            </button>
+        <div className="flex flex-col gap-6 text-white">
+          <div className="space-y-1">
+            <h3 className="text-3xl md:text-4xl font-black font-space leading-tight">
+              Hi, I&apos;m <span className="gradient-text">Ahmed</span>
+            </h3>
+            <p className="text-violet-400 font-semibold text-sm tracking-wide">aka Sluch — Full Stack Developer</p>
+          </div>
+
+          <div className="space-y-4 text-gray-400 text-base leading-7">
+            <p>
+              With a passion for digital innovation, I have dedicated myself to mastering the art of
+              full-stack development. My journey is defined by a relentless pursuit of excellence —
+              turning complex challenges into{' '}
+              <span className="text-white font-semibold">elegant, user-centric solutions</span>.
+            </p>
+            <p>
+              I specialize in building scalable, high-performance applications using the MERN stack,
+              writing clean and maintainable code that drives business growth and delivers
+              exceptional user experiences.
+            </p>
+          </div>
+
+          {/* Info badges */}
+          <div className="grid grid-cols-2 gap-3">
+            {infoBadges.map(({ icon: Icon, text, color }, i) => (
+              <div key={i} className="flex items-center gap-2.5 glass rounded-xl px-4 py-3 border border-white/8">
+                <Icon className={`${color} flex-shrink-0`} />
+                <span className="text-gray-300 text-sm font-medium">{text}</span>
+              </div>
+            ))}
+          </div>
+
+          <div className="flex gap-3 flex-wrap">
+            <Link href="#Projects">
+              <button
+                className="px-6 py-3 rounded-xl text-white font-semibold text-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-glow-sm"
+                style={{ background: 'linear-gradient(135deg, #6366f1, #3b82f6)' }}
+              >
+                View My Work →
+              </button>
+            </Link>
+            <a href="/Profile.pdf" download>
+              <button className="px-6 py-3 rounded-xl glass-card text-white font-semibold text-sm transition-all duration-300 hover:-translate-y-0.5">
+                Download CV
+              </button>
+            </a>
           </div>
         </div>
       </motion.div>
 
-      {/* Tools Section */}
+      {/* ── Skill Levels ── */}
       <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.2 }}
-        viewport={{ once: true }}
-        className="w-full max-w-6xl flex flex-col gap-6"
+        {...fadeUp(0.15)}
+        onViewportEnter={() => setSkillsVisible(true)}
+        className="w-full max-w-6xl grid md:grid-cols-2 gap-10 lg:gap-16 items-start"
       >
-        <h2 className="text-2xl md:text-3xl font-semibold text-white">🛠️ Technical Expertise</h2>
-        <p className="text-sm text-Gray-400 w-full md:w-[70%]">
-          A curated suite of modern technologies I leverage to build robust and scalable digital products.
-        </p>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
-          {tools.map((tool, idx) => (
-            <motion.div
-              key={idx}
-              whileHover={{ scale: 1.05 }}
-              className="flex items-center gap-3 bg-Black-100/70 backdrop-blur-sm border border-Gray-200 rounded-xl p-4 shadow-md hover:shadow-lg transition-all"
-            >
-              <div className="bg-Black-300 p-3 rounded-lg">
-                <span className="text-3xl">{tool.icon}</span>
+        {/* Left: Skill bars */}
+        <div className="space-y-6">
+          <div className="space-y-1">
+            <span className="tag-pill">Skill Levels</span>
+            <h3 className="text-2xl font-bold font-space text-white mt-2">Core Proficiencies</h3>
+            <p className="text-gray-400 text-sm">Years of practice condensed into progress bars.</p>
+          </div>
+
+          <div className="space-y-5">
+            {skillLevels.map((skill, idx) => (
+              <div key={idx} className="space-y-2">
+                <div className="flex items-center justify-between text-sm">
+                  <span className="text-gray-300 font-medium">{skill.name}</span>
+                  <span className="text-gray-500 font-mono">{skill.level}%</span>
+                </div>
+                <div className="h-2 rounded-full bg-white/5 overflow-hidden">
+                  <motion.div
+                    className={`h-full rounded-full bg-gradient-to-r ${skill.color}`}
+                    initial={{ width: 0 }}
+                    animate={{ width: skillsVisible ? `${skill.level}%` : 0 }}
+                    transition={{ duration: 1.2, delay: idx * 0.12, ease: 'easeOut' }}
+                  />
+                </div>
               </div>
-              <span className="text-white text-sm font-medium">{tool.name}</span>
-            </motion.div>
-          ))}
+            ))}
+          </div>
+        </div>
+
+        {/* Right: Tech icons */}
+        <div className="space-y-6">
+          <div className="space-y-1">
+            <span className="tag-pill">Tech Stack</span>
+            <h3 className="text-2xl font-bold font-space text-white mt-2">Technologies I Use</h3>
+            <p className="text-gray-400 text-sm">The tools I rely on to build robust products.</p>
+          </div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+            {tools.map((tool, idx) => (
+              <motion.div
+                key={idx}
+                initial={{ opacity: 0, y: 16 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: idx * 0.06 }}
+                whileHover={{ scale: 1.05, y: -3 }}
+                className="glass-card rounded-2xl p-4 flex flex-col items-center gap-2.5 cursor-default group"
+              >
+                <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-violet-600/20 to-blue-600/20 border border-violet-500/15 flex items-center justify-center text-2xl group-hover:scale-110 transition-transform duration-300">
+                  {tool.icon}
+                </div>
+                <span className="text-gray-300 text-xs font-semibold font-space">{tool.name}</span>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </motion.div>
 
-      {/* Stats Section */}
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.4 }}
-        viewport={{ once: true }}
-        className="w-full max-w-6xl flex flex-col gap-6"
-      >
-        <h2 className="text-2xl md:text-3xl font-semibold text-white">📊 My Stats</h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-white">
+      {/* ── Stats ── */}
+      <motion.div {...fadeUp(0.2)} className="w-full max-w-6xl space-y-8">
+        <div className="text-center space-y-2">
+          <span className="tag-pill">Numbers</span>
+          <h3 className="text-3xl font-bold font-space text-white">By the Numbers</h3>
+        </div>
+
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {stats.map((stat, i) => (
             <motion.div
               key={i}
-              whileHover={{ scale: 1.05 }}
-              className="bg-Black-100/80 border border-Gray-200 rounded-xl p-8 flex flex-col items-center gap-2 backdrop-blur-sm shadow-xl"
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.08 }}
+              whileHover={{ y: -4 }}
+              className="relative glass-card rounded-2xl p-7 flex flex-col items-center gap-2 overflow-hidden group"
             >
+              {/* hover bg */}
+              <div className="absolute inset-0 bg-gradient-to-br from-violet-600/0 to-blue-600/0 group-hover:from-violet-600/10 group-hover:to-blue-600/8 transition-all duration-500 rounded-2xl" />
               <CountUp
                 end={stat.num}
-                duration={4}
-                delay={1}
-                className="text-4xl font-extrabold text-Primary"
+                suffix="+"
+                duration={3.5}
+                delay={0.5}
+                className="text-4xl font-black gradient-text font-space relative z-10"
               />
-              <p className="text-sm text-Gray-400 text-center">{stat.text}</p>
+              <p className="text-sm text-gray-400 text-center relative z-10 leading-snug">{stat.text}</p>
             </motion.div>
           ))}
         </div>

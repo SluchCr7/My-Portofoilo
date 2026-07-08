@@ -87,10 +87,12 @@ export const reviews = [
 ];
 
 export const links = [
-  { id: 1, title: "Home", url: "#Home" },
+  { id: 1, title: "Home", url: "#home" },
   { id: 2, title: "About", url: "#About" },
-  { id: 3, title: "Projects", url: "#Projects" },
-  { id: 4, title: "Reviews", url: "#Reviews" },
+  { id: 3, title: "Services", url: "#Services" },
+  { id: 4, title: "Experience", url: "#Experience" },
+  { id: 5, title: "Projects", url: "#Projects" },
+  { id: 6, title: "Reviews", url: "#Reviews" },
 ];
 export const projects = [
   {
@@ -214,7 +216,7 @@ export const projects = [
     tools: ["javascript", "nextjs", "tailwind", "figma", "mongodb", "nodejs", "expressjs"],
     finishedAt: "August 2025",
     github: "https://github.com/SluchCr7/zamalek-Offecial-Website",
-    preview: "https://zamalek-eight.vercel.app",
+    preview: "https://zamalek-tau.vercel.app",
     details: "Includes a comprehensive history section, player profiles, and a secure authentication system for fan engagement.",
     duration: "6 weeks",
     features: [
@@ -301,6 +303,44 @@ export const projects = [
       "Real-time Alerts"
     ],
     status: "In Progress"
+  },
+  {
+    img: "/Projects/ecommerce.png",
+    name: "E-Commerce Platform",
+    description: "A modern e-commerce solution with a focus on user experience and seamless transactions.",
+    tools: ["javascript", "nextjs", "tailwind", "Framer motion" , "mongodb", "nodejs", "expressjs"],
+    finishedAt: "July 2026",
+    github: "https://github.com/SluchCr7/Primuim",
+    preview: "https://premium-hazel-nine.vercel.app",
+    details: "A full-featured online store with product listings, shopping cart functionality, and secure checkout processes.",
+    duration: "6 weeks",
+    features: [
+      "High-Quality Audio Streaming",
+      "Serene & Respectful UI",
+      "Comprehensive Recitation Library",
+      "Responsive Audio Player",
+      "Fast Content Delivery"
+    ],
+    status: "Completed"
+  },
+  {
+    img: "/Projects/chat.png",
+    name: "Chat Application",
+    description: "A real-time chat application enabling seamless communication between users with a focus on speed and reliability.",
+    tools: ["javascript", "nextjs", "tailwind", "Framer motion" , "mongodb", "nodejs", "expressjs"],
+    finishedAt: "Feb 2026",
+    github: "https://github.com/SluchCr7/Chat-App",
+    preview: "https://chat-blue-one.vercel.app/",
+    details: "A full-featured online store with product listings, shopping cart functionality, and secure checkout processes.",
+    duration: "4 weeks",
+    features: [
+      "High-Quality Audio Streaming",
+      "Serene & Respectful UI",
+      "Comprehensive Recitation Library",
+      "Responsive Audio Player",
+      "Fast Content Delivery"
+    ],
+    status: "Completed"
   },
 ];
 

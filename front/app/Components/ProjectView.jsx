@@ -1,9 +1,14 @@
 import React, { useEffect } from "react"
 import { IoIosClose } from "react-icons/io"
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa"
+import { FaGithub, FaExternalLinkAlt, FaCheckCircle, FaClock, FaCalendarAlt } from "react-icons/fa"
 import Image from "next/image"
 import { motion, AnimatePresence } from "framer-motion"
 import { techIcons } from "@/lib/Data"
+
+const statusConfig = {
+  Completed: { dot: 'bg-emerald-400', text: 'text-emerald-400', bg: 'bg-emerald-400/10 border-emerald-500/30', label: 'Completed' },
+  'In Progress': { dot: 'bg-amber-400', text: 'text-amber-400', bg: 'bg-amber-400/10 border-amber-500/30', label: 'In Progress' },
+}
 
 const ProjectView = ({ project, setProject }) => {
   useEffect(() => {
@@ -14,153 +19,181 @@ const ProjectView = ({ project, setProject }) => {
 
   if (!project || Object.keys(project).length === 0) return null;
 
+  const status = statusConfig[project.status] || statusConfig.Completed;
+
   return (
     <AnimatePresence>
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        className="fixed inset-0 z-[5000] flex items-center justify-center p-4 sm:p-6 bg-black/80 backdrop-blur-sm"
+        className="fixed inset-0 z-[5000] flex items-center justify-center p-4 sm:p-6"
+        style={{ background: 'rgba(0,3,25,0.85)', backdropFilter: 'blur(12px)' }}
         onClick={() => setProject({})}
       >
         <motion.div
-          layoutId={`project-${project.name}`}
-          initial={{ opacity: 0, scale: 0.9, y: 20 }}
+          initial={{ opacity: 0, scale: 0.92, y: 24 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
-          exit={{ opacity: 0, scale: 0.9, y: 20 }}
+          exit={{ opacity: 0, scale: 0.92, y: 24 }}
           transition={{ duration: 0.4, ease: [0.19, 1, 0.22, 1] }}
-          className="w-full max-w-6xl bg-[#0f0f0f] border border-white/10 rounded-[30px] overflow-hidden shadow-2xl flex flex-col lg:flex-row max-h-[90vh] relative group"
-          onClick={(e) => e.stopPropagation()}
+          className="w-full max-w-5xl max-h-[92vh] rounded-3xl overflow-hidden flex flex-col lg:flex-row relative"
+          style={{ background: '#0a0a1a', border: '1px solid rgba(99,102,241,0.2)', boxShadow: '0 0 80px rgba(99,102,241,0.15), 0 40px 80px rgba(0,0,0,0.6)' }}
+          onClick={e => e.stopPropagation()}
         >
-          {/* Close Button Mobile */}
+          {/* Close Button */}
           <button
             onClick={() => setProject({})}
-            className="lg:hidden absolute top-4 right-4 z-50 p-2 rounded-full bg-black/60 text-white backdrop-blur-md border border-white/10"
+            className="absolute top-4 right-4 z-50 p-2 rounded-xl text-gray-400 hover:text-white transition-colors"
+            style={{ background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.1)' }}
           >
             <IoIosClose size={24} />
           </button>
 
-          {/* Image Section */}
-          <div className="lg:w-[60%] h-64 lg:h-auto relative bg-[#111] overflow-hidden">
+          {/* Left — Image */}
+          <div className="lg:w-[55%] h-56 lg:h-auto relative overflow-hidden flex-shrink-0">
             <Image
               src={project.img}
               alt={project.name}
               fill
-              className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
+              className="object-cover object-top"
               priority
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0f0f0f] to-transparent lg:bg-gradient-to-r lg:from-transparent lg:to-[#0f0f0f]" />
+            {/* gradient overlay */}
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#0a0a1a] lg:bg-gradient-to-r lg:from-transparent lg:to-[#0a0a1a]" />
 
-            {/* Floating Title on Desktop (Optional stylistic choice, keeping it clean for now) */}
+            {/* Project name overlay on mobile */}
+            <div className="absolute bottom-4 left-4 lg:hidden">
+              <h2 className="text-2xl font-black font-space text-white drop-shadow-xl">{project.name}</h2>
+            </div>
           </div>
 
-          {/* Content Section */}
-          <div className="lg:w-[40%] flex flex-col bg-[#0f0f0f] relative">
-            {/* Close Button Desktop */}
-            <button
-              onClick={() => setProject({})}
-              className="hidden lg:flex absolute top-6 right-6 z-50 p-2 rounded-full bg-white/5 text-gray-400 hover:text-white hover:bg-white/10 transition-all"
-            >
-              <IoIosClose size={28} />
-            </button>
-
-            <div className="flex-1 overflow-y-auto custom-scroll p-8 lg:p-10 flex flex-col gap-8">
+          {/* Right — Content */}
+          <div className="lg:w-[45%] flex flex-col overflow-hidden">
+            <div className="flex-1 overflow-y-auto custom-scroll p-7 lg:p-8 flex flex-col gap-6">
 
               {/* Header */}
-              <div className="space-y-4 mt-2">
+              <div className="space-y-3 hidden lg:block">
                 <motion.h2
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.1 }}
-                  className="text-3xl lg:text-4xl font-bold text-white leading-tight"
+                  className="text-3xl font-black font-space text-white leading-tight"
                 >
                   {project.name}
                 </motion.h2>
                 <motion.p
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.2 }}
-                  className="text-gray-400 text-sm lg:text-base leading-relaxed"
+                  transition={{ delay: 0.15 }}
+                  className="text-gray-400 text-sm leading-6"
                 >
                   {project.description}
                 </motion.p>
               </div>
 
-              {/* Meta Info Grid */}
-              <div className="grid grid-cols-2 gap-4">
-                <div className="p-4 rounded-2xl bg-white/5 border border-white/5 hover:border-white/10 transition-colors">
-                  <p className="text-xs text-gray-500 uppercase tracking-wider mb-1 font-semibold">Status</p>
-                  <div className="flex items-center gap-2">
-                    <span className="relative flex h-2.5 w-2.5">
-                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                      <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
-                    </span>
-                    <span className="text-emerald-400 font-medium text-sm">{project.status}</span>
+              {/* Mobile description */}
+              <p className="text-gray-400 text-sm leading-6 lg:hidden">{project.description}</p>
+
+              {/* Meta Grid */}
+              <div className="grid grid-cols-3 gap-3">
+                <div className="rounded-xl p-3 flex flex-col gap-1" style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.07)' }}>
+                  <p className="text-[10px] text-gray-500 uppercase tracking-wider font-semibold">Status</p>
+                  <div className={`flex items-center gap-1.5 px-2 py-0.5 rounded-full border text-xs font-semibold w-fit ${status.bg} ${status.text}`}>
+                    <span className={`w-1.5 h-1.5 rounded-full ${status.dot}`} />
+                    {status.label}
                   </div>
                 </div>
-                <div className="p-4 rounded-2xl bg-white/5 border border-white/5 hover:border-white/10 transition-colors">
-                  <p className="text-xs text-gray-500 uppercase tracking-wider mb-1 font-semibold">Timeline</p>
-                  <p className="text-gray-200 font-medium text-sm">{project.duration}</p>
+                <div className="rounded-xl p-3 flex flex-col gap-1" style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.07)' }}>
+                  <p className="text-[10px] text-gray-500 uppercase tracking-wider font-semibold">Timeline</p>
+                  <div className="flex items-center gap-1 text-gray-200 text-xs font-semibold">
+                    <FaClock className="text-violet-400 text-[10px]" />
+                    {project.duration}
+                  </div>
+                </div>
+                <div className="rounded-xl p-3 flex flex-col gap-1" style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.07)' }}>
+                  <p className="text-[10px] text-gray-500 uppercase tracking-wider font-semibold">Finished</p>
+                  <div className="flex items-center gap-1 text-gray-200 text-xs font-semibold">
+                    <FaCalendarAlt className="text-blue-400 text-[10px]" />
+                    {project.finishedAt}
+                  </div>
                 </div>
               </div>
 
               {/* Tech Stack */}
-              <div className="space-y-4">
-                <h3 className="text-xs font-bold text-gray-500 uppercase tracking-wider">Technologies Used</h3>
+              <div className="space-y-3">
+                <h3 className="text-xs font-bold text-gray-500 uppercase tracking-widest">Tech Stack</h3>
                 <div className="flex flex-wrap gap-2">
                   {project.tools?.map((tool, idx) => (
-                    <div key={idx} className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-white/5 border border-white/5 text-gray-300 text-xs font-medium hover:bg-white/10 hover:text-white transition-colors cursor-default">
-                      <span className="text-base">
-                        {techIcons[tool] || "⚡"}
-                      </span>
+                    <div
+                      key={idx}
+                      className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-gray-300 text-xs font-medium transition-colors hover:text-white"
+                      style={{ background: 'rgba(99,102,241,0.08)', border: '1px solid rgba(99,102,241,0.2)' }}
+                    >
+                      <span className="text-sm">{techIcons[tool] || '⚡'}</span>
                       <span className="capitalize">{tool}</span>
                     </div>
                   ))}
                 </div>
               </div>
 
-              {/* Features List */}
+              {/* Features */}
               {project.features && (
-                <div className="space-y-4">
-                  <h3 className="text-xs font-bold text-gray-500 uppercase tracking-wider">Key Features</h3>
-                  <ul className="grid gap-3">
+                <div className="space-y-3">
+                  <h3 className="text-xs font-bold text-gray-500 uppercase tracking-widest">Key Features</h3>
+                  <ul className="grid gap-2.5">
                     {project.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-start gap-3 text-gray-400 text-sm group">
-                        <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-500 group-hover:bg-blue-400 transition-colors flex-shrink-0" />
-                        <span className="group-hover:text-gray-300 transition-colors">{feature}</span>
-                      </li>
+                      <motion.li
+                        key={idx}
+                        initial={{ opacity: 0, x: -10 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ delay: 0.2 + idx * 0.06 }}
+                        className="flex items-center gap-3 text-gray-400 text-sm group hover:text-gray-200 transition-colors"
+                      >
+                        <FaCheckCircle className="text-violet-500 flex-shrink-0 text-xs group-hover:text-violet-400 transition-colors" />
+                        {feature}
+                      </motion.li>
                     ))}
                   </ul>
                 </div>
               )}
+
+              {/* Details */}
+              {project.details && (
+                <div className="rounded-xl p-4" style={{ background: 'rgba(99,102,241,0.05)', border: '1px solid rgba(99,102,241,0.15)' }}>
+                  <p className="text-gray-400 text-xs leading-5">
+                    <span className="text-violet-400 font-semibold">Note: </span>
+                    {project.details}
+                  </p>
+                </div>
+              )}
             </div>
 
-            {/* Footer Actions */}
-            <div className="p-8 pt-4 border-t border-white/5 bg-[#0f0f0f]">
-              <div className="flex gap-4">
-                {project.preview && (
-                  <a
-                    href={project.preview}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="flex-1 flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-500 text-white py-3 rounded-xl font-semibold transition-all shadow-lg shadow-blue-900/20 hover:shadow-blue-900/40 active:scale-[0.98]"
-                  >
-                    <FaExternalLinkAlt className="text-sm" />
-                    <span>Live Demo</span>
-                  </a>
-                )}
-                {project.github && (
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="flex-1 flex items-center justify-center gap-2 bg-white/5 hover:bg-white/10 text-white py-3 rounded-xl font-semibold border border-white/5 transition-all active:scale-[0.98]"
-                  >
-                    <FaGithub className="text-lg" />
-                    <span>Source Code</span>
-                  </a>
-                )}
-              </div>
+            {/* Action Buttons */}
+            <div className="p-6 pt-4 flex gap-3" style={{ borderTop: '1px solid rgba(255,255,255,0.06)' }}>
+              {project.preview && (
+                <a
+                  href={project.preview}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex-1 flex items-center justify-center gap-2 py-3 rounded-xl text-white font-semibold text-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-glow-sm"
+                  style={{ background: 'linear-gradient(135deg, #6366f1, #3b82f6)' }}
+                >
+                  <FaExternalLinkAlt className="text-xs" />
+                  Live Demo
+                </a>
+              )}
+              {project.github && (
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex-1 flex items-center justify-center gap-2 py-3 rounded-xl text-white font-semibold text-sm transition-all duration-300 hover:-translate-y-0.5"
+                  style={{ background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.1)' }}
+                >
+                  <FaGithub className="text-base" />
+                  Source Code
+                </a>
+              )}
             </div>
           </div>
         </motion.div>
