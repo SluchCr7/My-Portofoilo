@@ -61,7 +61,9 @@ const About = () => {
           <div className="relative group w-fit">
             {/* Glow ring */}
             <div className="absolute -inset-1.5 rounded-3xl bg-gradient-to-r from-violet-600 via-blue-600 to-violet-600 blur-md opacity-40 group-hover:opacity-70 transition duration-700" />
-            <div className="relative w-64 h-72 md:w-72 md:h-80 rounded-3xl overflow-hidden border border-white/10 shadow-card">
+            
+            {/* تم تعديل الأبعاد هنا لزيادة الطول وتناسبه مع النص */}
+            <div className="relative w-72 h-80 md:w-[450px] md:h-[480px] rounded-3xl overflow-hidden border border-white/10 shadow-card">
               <Image
                 src="/Home.jpg"
                 alt="Ahmed Sluch — Full Stack Developer"
@@ -77,7 +79,7 @@ const About = () => {
             <motion.div
               animate={{ y: [0, -6, 0] }}
               transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
-              className="absolute -bottom-5 -left-5 glass rounded-2xl px-4 py-3 border border-violet-500/30 shadow-glow-sm"
+              className="absolute bottom-4 -left-5 glass rounded-2xl px-4 py-3 border border-violet-500/30 shadow-glow-sm"
             >
               <p className="text-violet-300 text-xs font-medium">Experience</p>
               <p className="text-white text-lg font-black font-space">4+ Years</p>
@@ -87,7 +89,7 @@ const About = () => {
             <motion.div
               animate={{ y: [0, -6, 0] }}
               transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut', delay: 1.5 }}
-              className="absolute -top-5 -right-5 glass rounded-2xl px-4 py-3 border border-blue-500/30 shadow-glow-sm"
+              className="absolute top-4 -right-5 glass rounded-2xl px-4 py-3 border border-blue-500/30 shadow-glow-sm"
             >
               <p className="text-blue-300 text-xs font-medium">Projects</p>
               <p className="text-white text-lg font-black font-space">12+</p>

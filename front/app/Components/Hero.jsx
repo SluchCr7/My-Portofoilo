@@ -211,7 +211,7 @@ const Hero = () => {
             {/* Image */}
             <div className="relative w-52 h-52 md:w-60 md:h-60 rounded-full overflow-hidden border-4 border-[#000319]">
               <Image
-                src="/Home.jpg"
+                src="/profile.webp"
                 alt="Ahmed Sluch — Full Stack Developer"
                 fill
                 className="object-cover object-top"

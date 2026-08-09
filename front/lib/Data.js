@@ -2,7 +2,8 @@ import { CiGlobe } from "react-icons/ci";
 import { CiServer } from "react-icons/ci";
 import { CiImageOn } from "react-icons/ci";
 import { IoMdColorPalette } from "react-icons/io";
-import { FaGithub, FaLinkedin, FaInstagram, FaTwitter, FaFacebook } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaInstagram, FaTwitter, FaFacebook} from 'react-icons/fa';
+import { FaXTwitter } from "react-icons/fa6";
 
 // techIcons.tsx
 import { FaJsSquare, FaNodeJs } from "react-icons/fa";
@@ -374,12 +375,12 @@ export const icons = [
     Icon: FaLinkedin
   },
   {
-    link: "https://www.instagram.com",
-    Icon: FaInstagram
-  },
-  {
     link: "https://www.facebook.com/ahmed.abobakr.821836/",
     Icon: FaFacebook
+  },
+  {
+    link : "https://x.com/slucher004",
+    Icon : FaXTwitter
   }
 ]
 
