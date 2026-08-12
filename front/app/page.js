@@ -29,7 +29,7 @@ export default function Home() {
       <section className="w-full max-w-7xl"><Services /></section>
       <section className="w-full max-w-7xl"><Experience /></section>
       <section className="w-full max-w-7xl"><Portfolio /></section>
-      <section className="w-full"><Reviews /></section>
+      {/* <section className="w-full"><Reviews /></section> */}
       <section className="w-full"><Footer /></section>
     </main>
   );
