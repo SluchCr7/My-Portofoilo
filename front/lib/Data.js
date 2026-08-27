@@ -343,6 +343,45 @@ export const projects = [
     ],
     status: "Completed"
   },
+  {
+  img: "/Projects/vibeShorts.png",
+  name: "VibeShorts",
+  description:
+    "A modern short-form video platform built to deliver an engaging and seamless content-sharing experience, allowing users to discover, upload, and interact with short videos.",
+
+  tools: [
+    "typescript",
+    "react",
+    "tailwind",
+    "redux",
+    "nodejs",
+    "expressjs",
+    "mongodb"
+  ],
+
+  finishedAt: "August 2026",
+
+  github: "PUT_YOUR_GITHUB_LINK_HERE",
+  preview: "PUT_YOUR_LIVE_DEMO_HERE",
+
+  details:
+    "A full-stack short video platform built with the MERN stack, featuring secure authentication, video uploading and management, interactive user engagement, and a responsive interface optimized for a smooth content discovery experience.",
+
+  duration: "4 weeks",
+
+  features: [
+    "Secure User Authentication",
+    "Short Video Upload & Management",
+    "Personalized Video Feed",
+    "Like & Comment System",
+    "User Profiles",
+    "Follow / Unfollow System",
+    "Responsive Mobile-First Interface",
+    "Global State Management with Redux"
+  ],
+
+  status: "Completed"
+},
 ];
 
 
