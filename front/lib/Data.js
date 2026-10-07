@@ -33,12 +33,6 @@ export const services = [
       "Delivering end-to-end web solutions using the MERN stack. I build robust, scalable, and high-performance applications tailored to meet your business objectives, ensuring seamless functionality from database to user interface.",
   },
   {
-    icon: <CiImageOn />,
-    name: "UI / UX Design",
-    description:
-      "Designing user-centric interfaces that are visually stunning and highly intuitive. I focus on creating seamless user journeys, wireframes, and prototypes that enhance engagement and satisfaction.",
-  },
-  {
     icon: <CiServer />,
     name: "Backend Architecture",
     description:
@@ -135,32 +129,13 @@ export const projects = [
     status: "Completed"
   },
   {
-    img: "/Projects/Taskify.png",
-    name: "Taskify",
-    description: "A streamlined task management application offering a drag-and-drop interface for organizing personal and professional workflows efficiently.",
-    tools: ["javascript", "nextjs", "tailwind", "figma"],
-    finishedAt: "March 2025",
-    github: "https://github.com/SluchCr7/Todo-List-MERN-Stack-",
-    preview: "https://taskify-khaki-nu.vercel.app",
-    details: "Implements local storage for data persistence, with a clean UI inspired by modern design principles.",
-    duration: "5 days",
-    features: [
-      "Intuitive Drag & Drop",
-      "CRUD Operations",
-      "Local Storage Persistence",
-      "Modern Minimalist UI",
-      "Workflow Organization"
-    ],
-    status: "Completed"
-  },
-  {
     img: "/Projects/Zocial.png",
     name: "Zocial",
     description: "A comprehensive social media platform enabling users to connect, share updates, and manage their digital presence with features similar to major networks.",
     tools: ["javascript", "nextjs", "tailwind", "nodejs", "mongodb"],
     finishedAt: "July 2025",
     github: "https://github.com/SluchCr7/Social-Media",
-    preview: "https://zocial-eight.vercel.app",
+    preview: "https://zocial-zeta.vercel.app",
     details: "Incorporates a full follow/unfollow system, real-time feed updates, and optimized image handling via Cloudinary.",
     duration: "10 weeks",
     features: [
@@ -171,25 +146,6 @@ export const projects = [
       "Cloud Media Integration"
     ],
     status: "In Progress"
-  },
-  {
-    img: "/Projects/Cryptova.png",
-    name: "Cryptova",
-    description: "A real-time cryptocurrency tracker providing live market data, detailed analysis, and interactive charting for informed investment decisions.",
-    tools: ["javascript", "nextjs", "tailwind"],
-    finishedAt: "November 2024",
-    github: "https://github.com/SluchCr7/Password-Generator-Cryptova-",
-    preview: "https://cryptova-ruby.vercel.app",
-    details: "Integrates the CoinGecko API for live updates, featuring advanced search capabilities and category filtering.",
-    duration: "1.5 weeks",
-    features: [
-      "Live CoinGecko API Integration",
-      "Interactive Market Charts",
-      "Advanced Search & Filters",
-      "Responsive Dark Theme",
-      "Real-time Data Visualization"
-    ],
-    status: "Completed"
   },
   {
     img: "/Projects/Fashionista.png",
@@ -236,7 +192,7 @@ export const projects = [
     tools: ["javascript", "nextjs", "tailwind", "figma", "mongodb", "nodejs", "expressjs"],
     finishedAt: "August 2024",
     github: "https://github.com/SluchCr7/Islam-Quran",
-    preview: "https://islam-roan.vercel.app",
+    preview: "https://islam-mu.vercel.app",
     details: "Focuses on a clean, distraction-free interface, offering reliable data and a responsive design for on-the-go access.",
     duration: "3 weeks",
     features: [
@@ -245,25 +201,6 @@ export const projects = [
       "Clean Reading Interface",
       "Location-Based Calculations",
       "Mobile-First Design"
-    ],
-    status: "Completed"
-  },
-  {
-    img: "/Projects/Landing.png",
-    name: "Devion Landing Page",
-    description: "A high-conversion landing page for software solutions, showcasing services and pricing with a sleek, professional layout.",
-    tools: ["javascript", "nextjs", "tailwind", "Framer motion"],
-    finishedAt: "November 2025",
-    github: "https://github.com/SluchCr7/Deveion",
-    preview: "https://deveion.vercel.app",
-    details: "Utilizes Framer Motion for engaging animations and Next.js for superior load times and SEO performance.",
-    duration: "2 Days",
-    features: [
-      "High-Performance Rendering",
-      "Engaging Motion Effects",
-      "Pricing Strategy Display",
-      "Optimized Call-to-Actions",
-      "Responsive Layout"
     ],
     status: "Completed"
   },
@@ -285,25 +222,6 @@ export const projects = [
       "Fast Content Delivery"
     ],
     status: "Completed"
-  },
-  {
-    img: "/Projects/JobsFinder.png",
-    name: "JobFinder Pro",
-    description: "A robust career platform connecting job seekers with top employers, featuring advanced search filters and profile management tools.",
-    tools: ["javascript", "nextjs", "tailwind", "Framer motion"],
-    finishedAt: "December 2025",
-    github: "https://github.com/SluchCr7/Jobs-Website",
-    preview: "https://jopfinder.vercel.app/",
-    details: "Supports detailed user profiles, resume uploads, and an employer dashboard for managing job postings and applications.",
-    duration: "2 weeks",
-    features: [
-      "Advanced Job Search",
-      "Candidate Profile Management",
-      "Employer Dashboard",
-      "Application Tracking",
-      "Real-time Alerts"
-    ],
-    status: "In Progress"
   },
   {
     img: "/Projects/ecommerce.png",
@@ -361,8 +279,8 @@ export const projects = [
 
   finishedAt: "August 2026",
 
-  github: "PUT_YOUR_GITHUB_LINK_HERE",
-  preview: "PUT_YOUR_LIVE_DEMO_HERE",
+  github: "https://github.com/SluchCr7/shorts-App",
+  preview: "https://vibeshorts-blond.vercel.app/",
 
   details:
     "A full-stack short video platform built with the MERN stack, featuring secure authentication, video uploading and management, interactive user engagement, and a responsive interface optimized for a smooth content discovery experience.",
@@ -382,6 +300,45 @@ export const projects = [
 
   status: "Completed"
 },
+  {
+  "img": "https://images.unsplash.com/photo-1563986768609-322da13575f3?",
+  "name": "Digital Banking Platform",
+  "description":
+    "A secure and comprehensive digital banking web application featuring dedicated user portals and robust administrative control panels built with modern web technologies.",
+
+  "tools": [
+    "nextjs",
+    "react",
+    "typescript",
+    "tailwind",
+    "nodejs",
+    "expressjs",
+    "mongodb"
+  ],
+
+  "finishedAt": "Sep 2026",
+
+  "github": "https://github.com/SluchCr7/Bank-System",
+  "preview": "https://pfp-self-six.vercel.app/",
+
+  "details":
+    "A full-stack digital banking platform utilizing Next.js Route Groups to segregate client-facing banking operations from administrative management layouts, ensuring secure transactions, account management, and real-time financial tracking.",
+
+  "duration": "4 weeks",
+
+  "features": [
+    "Secure Authentication & Authorization",
+    "Separate User & Admin Layouts via Next.js Route Groups",
+    "Account Balance & Transaction Tracking",
+    "Fund Transfers & Payment History",
+    "Admin Dashboard for User & Account Management",
+    "Responsive Mobile-First Interface",
+    "Optimized Performance & Secure Backend APIs"
+  ],
+
+  "status": "Completed"
+}
+  
 ];
 
 
