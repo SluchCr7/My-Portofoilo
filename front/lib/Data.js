@@ -28,21 +28,21 @@ export const techIcons = {
 export const services = [
   {
     icon: <CiGlobe />,
-    name: "Full Stack Web Development",
+    name: "Full-Stack Web Development",
     description:
-      "Delivering end-to-end web solutions using the MERN stack. I build robust, scalable, and high-performance applications tailored to meet your business objectives, ensuring seamless functionality from database to user interface.",
+      "Building complete, scalable web applications from frontend to backend. I develop modern solutions using React, Next.js, Node.js, and MongoDB, focusing on clean architecture, reliable functionality, and seamless user experiences.",
   },
   {
     icon: <CiServer />,
-    name: "Backend Architecture",
+    name: "Backend & API Development",
     description:
-      "Architecting secure and efficient server-side systems. I specialize in RESTful API development, database optimization (MongoDB), and server management to support complex application workflows.",
+      "Developing secure and well-structured backend systems using Node.js and Express.js. From RESTful API design and database modeling to authentication, authorization, and business logic, I build reliable server-side solutions that power modern applications.",
   },
   {
     icon: <IoMdColorPalette />,
-    name: "Frontend Engineering",
+    name: "Frontend Development",
     description:
-      "Transforming creative designs into responsive, pixel-perfect web experiences. Utilizing modern frameworks like Next.js and React, I ensure your application looks exceptional and performs flawlessly across all devices.",
+      "Creating responsive, intuitive, and visually engaging interfaces using React and Next.js. I transform designs into functional user experiences with reusable components, efficient state management, and attention to performance and accessibility.",
   },
 ];
 
@@ -90,44 +90,44 @@ export const links = [
   { id: 6, title: "Reviews", url: "#Reviews" },
 ];
 export const projects = [
-  {
-    img: "/Projects/Playtactic.png",
-    name: "PlayTactic",
-    description: "An engaging football-themed quiz platform designed to challenge fans with tiered difficulty levels, complete with a competitive ranking system.",
-    tools: ["javascript", "nextjs", "tailwind"],
-    finishedAt: "May 2024",
-    github: "https://github.com/SluchCr7/Challenge",
-    preview: "https://playtactic.vercel.app",
-    details: "Features secure JWT authentication, real-time scoring updates, and a MongoDB backend for robust data management.",
-    duration: "3 weeks",
-    features: [
-      "Secure JWT Authentication",
-      "Dynamic Leaderboard System",
-      "Admin Dashboard for Content",
-      "Interactive Animations",
-      "Scalable MongoDB Architecture"
-    ],
-    status: "Completed"
-  },
-  {
-    img: "/Projects/Sluch.png",
-    name: "My Portfolio",
-    description: "A professional showcase of my development career, featuring a modern, dark-themed aesthetic and interactive elements to highlight my skills and projects.",
-    tools: ["nextjs", "tailwind"],
-    finishedAt: "August 2025",
-    github: "https://github.com/SluchCr7/My-Portofoilo",
-    preview: "https://sluch.vercel.app",
-    details: "Built with Next.js for SEO optimization, featuring smooth transitions and a fully responsive layout using Tailwind CSS.",
-    duration: "1 week",
-    features: [
-      "Sleek Dark Mode Design",
-      "Interactive Project Carousel",
-      "Fully Responsive Layout",
-      "Optimized Performance",
-      "Advanced Filtering System"
-    ],
-    status: "Completed"
-  },
+  // {
+  //   img: "/Projects/Playtactic.png",
+  //   name: "PlayTactic",
+  //   description: "An engaging football-themed quiz platform designed to challenge fans with tiered difficulty levels, complete with a competitive ranking system.",
+  //   tools: ["javascript", "nextjs", "tailwind"],
+  //   finishedAt: "May 2024",
+  //   github: "https://github.com/SluchCr7/Challenge",
+  //   preview: "https://playtactic.vercel.app",
+  //   details: "Features secure JWT authentication, real-time scoring updates, and a MongoDB backend for robust data management.",
+  //   duration: "3 weeks",
+  //   features: [
+  //     "Secure JWT Authentication",
+  //     "Dynamic Leaderboard System",
+  //     "Admin Dashboard for Content",
+  //     "Interactive Animations",
+  //     "Scalable MongoDB Architecture"
+  //   ],
+  //   status: "Completed"
+  // },
+  // {
+  //   img: "/Projects/Sluch.png",
+  //   name: "My Portfolio",
+  //   description: "A professional showcase of my development career, featuring a modern, dark-themed aesthetic and interactive elements to highlight my skills and projects.",
+  //   tools: ["nextjs", "tailwind"],
+  //   finishedAt: "August 2025",
+  //   github: "https://github.com/SluchCr7/My-Portofoilo",
+  //   preview: "https://sluch.vercel.app",
+  //   details: "Built with Next.js for SEO optimization, featuring smooth transitions and a fully responsive layout using Tailwind CSS.",
+  //   duration: "1 week",
+  //   features: [
+  //     "Sleek Dark Mode Design",
+  //     "Interactive Project Carousel",
+  //     "Fully Responsive Layout",
+  //     "Optimized Performance",
+  //     "Advanced Filtering System"
+  //   ],
+  //   status: "Completed"
+  // },
   {
     img: "/Projects/Zocial.png",
     name: "Zocial",
@@ -185,25 +185,25 @@ export const projects = [
     ],
     status: "Completed"
   },
-  {
-    img: "/Projects/quran.png",
-    name: "Quran & Prayer",
-    description: "A spiritual companion app providing accurate prayer times and the Holy Quran, designed to facilitate daily worship with ease and accessibility.",
-    tools: ["javascript", "nextjs", "tailwind", "figma", "mongodb", "nodejs", "expressjs"],
-    finishedAt: "August 2024",
-    github: "https://github.com/SluchCr7/Islam-Quran",
-    preview: "https://islam-mu.vercel.app",
-    details: "Focuses on a clean, distraction-free interface, offering reliable data and a responsive design for on-the-go access.",
-    duration: "3 weeks",
-    features: [
-      "Accurate Prayer Times",
-      "Digital Holy Quran",
-      "Clean Reading Interface",
-      "Location-Based Calculations",
-      "Mobile-First Design"
-    ],
-    status: "Completed"
-  },
+  // {
+  //   img: "/Projects/quran.png",
+  //   name: "Quran & Prayer",
+  //   description: "A spiritual companion app providing accurate prayer times and the Holy Quran, designed to facilitate daily worship with ease and accessibility.",
+  //   tools: ["javascript", "nextjs", "tailwind", "figma", "mongodb", "nodejs", "expressjs"],
+  //   finishedAt: "August 2024",
+  //   github: "https://github.com/SluchCr7/Islam-Quran",
+  //   preview: "https://islam-mu.vercel.app",
+  //   details: "Focuses on a clean, distraction-free interface, offering reliable data and a responsive design for on-the-go access.",
+  //   duration: "3 weeks",
+  //   features: [
+  //     "Accurate Prayer Times",
+  //     "Digital Holy Quran",
+  //     "Clean Reading Interface",
+  //     "Location-Based Calculations",
+  //     "Mobile-First Design"
+  //   ],
+  //   status: "Completed"
+  // },
   {
     img: "/Projects/mens.png",
     name: "Sheikh Al-Minshawi Tribute",
@@ -262,7 +262,50 @@ export const projects = [
     status: "Completed"
   },
   {
-  img: "/Projects/vibeShorts.png",
+  img: "https://res.cloudinary.com/dasp6vwlx/image/upload/v1793374424/clinic_management_system.png",
+  name: "Clinic Management System",
+  description:
+    "A comprehensive clinic management platform designed to streamline daily healthcare operations, enabling administrators, doctors, and receptionists to efficiently manage patients, appointments, medical visits, and billing through a centralized system.",
+  tools: [
+    "typescript",
+    "react",
+    "nextjs",
+    "tailwind",
+    "nodejs",
+    "expressjs",
+    "mongodb",
+    "mongoose"
+  ],
+
+  finishedAt: "October 2026",
+
+  github: "https://github.com/SluchCr7/Clinic-System-Management",
+  preview: "https://clinic-system-management-blue.vercel.app/",
+
+  details:
+    "A full-stack healthcare management system built with the MERN stack and Next.js, featuring role-based access control, secure cookie-based authentication, appointment scheduling with conflict detection, patient records management, medical visit tracking, laboratory services, invoicing, and payment management. Built with a structured backend architecture and a responsive interface to ensure secure, reliable, and efficient clinic operations.",
+
+  duration: "4 weeks",
+
+  features: [
+    "Role-Based Access Control (Admin, Doctor & Receptionist)",
+    "Secure Authentication with Access & Refresh Tokens",
+    "Patient Management & Medical Records",
+    "Doctor Management & Profile Management",
+    "Appointment Scheduling & Conflict Detection",
+    "Doctor Availability & Working Schedules",
+    "Medical Visits & Diagnosis Tracking",
+    "Laboratory Tests & Medical Services Management",
+    "Invoice Generation & Payment Tracking",
+    "Automated Invoice Numbering",
+    "Cloudinary Profile Image Uploads",
+    "Responsive Dashboard Interface"
+  ],
+
+  status: "Completed"
+},
+  {
+  img: "https://res.cloudinary.com/dasp6vwlx/image/upload/v1793374205/shorts_video_creator.png",
   name: "VibeShorts",
   description:
     "A modern short-form video platform built to deliver an engaging and seamless content-sharing experience, allowing users to discover, upload, and interact with short videos.",
