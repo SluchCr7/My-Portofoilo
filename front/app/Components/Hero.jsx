@@ -152,7 +152,7 @@ const Hero = () => {
                 <HiArrowRight className="group-hover:translate-x-1 transition-transform duration-200" />
               </button>
             </Link>
-            <a href="/Profile.pdf" download>
+            <a href="/Ahmed Abobakr CV.pdf" download>
               <button className="group flex items-center justify-center gap-2 px-8 py-3.5 rounded-xl glass-card text-white font-semibold text-sm transition-all duration-300 hover:-translate-y-0.5 w-full">
                 <FaDownload className="text-violet-400 text-xs group-hover:translate-y-0.5 transition-transform" />
                 Download CV

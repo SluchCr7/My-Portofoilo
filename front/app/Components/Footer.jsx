@@ -48,7 +48,7 @@ const Footer = () => {
               Start a Project
               <span className="text-white/60 group-hover:translate-x-1 transition-transform">→</span>
             </button>
-            <a href="/Profile.pdf" download>
+            <a href="/Ahmed Abobakr CV.pdf" download>
               <button className="px-10 py-4 rounded-2xl glass-card text-white font-bold text-base transition-all duration-300 hover:-translate-y-1">
                 Download CV
               </button>

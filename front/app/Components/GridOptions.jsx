@@ -93,7 +93,7 @@ const GridOptions = ({ setIsOpen }) => {
             <h3 className="text-lg font-bold font-space text-white">Download My CV</h3>
             <p className="text-gray-500 text-xs mt-1">Get the full picture of my experience</p>
           </div>
-          <a href="/Profile.pdf" download className="relative z-10">
+          <a href="/Ahmed Abobakr CV.pdf" download className="relative z-10">
             <button className="w-full py-2.5 rounded-xl text-white text-sm font-semibold transition-all duration-300 hover:-translate-y-0.5"
               style={{ background: 'linear-gradient(135deg, #6366f1, #3b82f6)', boxShadow: '0 4px 15px rgba(99,102,241,0.3)' }}>
               Download PDF

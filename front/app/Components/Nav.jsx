@@ -84,7 +84,7 @@ const Nav = () => {
 
           {/* Right CTAs */}
           <div className="hidden md:flex items-center gap-3">
-            <a href="/Profile.pdf" download>
+            <a href="/Ahmed Abobakr CV.pdf" download>
               <button className="flex items-center gap-2 px-4 py-2 rounded-xl glass-card text-gray-300 hover:text-white text-sm font-medium transition-all duration-200 hover:-translate-y-0.5">
                 <FaDownload className="text-xs text-violet-400" />
                 CV
@@ -141,7 +141,7 @@ const Nav = () => {
             <div className="h-px bg-white/8 my-1 mx-2" />
 
             <div className="flex gap-2 p-1">
-              <a href="/Profile.pdf" download className="flex-1">
+              <a href="/Ahmed Abobakr CV.pdf" download className="flex-1">
                 <button className="w-full py-2.5 rounded-xl glass-card text-white text-sm font-medium text-center">
                   Download CV
                 </button>

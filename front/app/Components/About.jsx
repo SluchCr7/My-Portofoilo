@@ -139,7 +139,7 @@ const About = () => {
                 View My Work →
               </button>
             </Link>
-            <a href="/Profile.pdf" download>
+            <a href="/Ahmed Abobakr CV.pdf" download>
               <button className="px-6 py-3 rounded-xl glass-card text-white font-semibold text-sm transition-all duration-300 hover:-translate-y-0.5">
                 Download CV
               </button>

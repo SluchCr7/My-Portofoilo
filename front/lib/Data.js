@@ -262,7 +262,7 @@ export const projects = [
     status: "Completed"
   },
   {
-  img: "https://res.cloudinary.com/dasp6vwlx/image/upload/v1793374424/clinic_management_system.png",
+  img: "/Projects/clinic.png",
   name: "Clinic Management System",
   description:
     "A comprehensive clinic management platform designed to streamline daily healthcare operations, enabling administrators, doctors, and receptionists to efficiently manage patients, appointments, medical visits, and billing through a centralized system.",
@@ -305,11 +305,10 @@ export const projects = [
   status: "Completed"
 },
   {
-  img: "https://res.cloudinary.com/dasp6vwlx/image/upload/v1793374205/shorts_video_creator.png",
+  img: "/Projects/shorts.png",
   name: "VibeShorts",
   description:
     "A modern short-form video platform built to deliver an engaging and seamless content-sharing experience, allowing users to discover, upload, and interact with short videos.",
-
   tools: [
     "typescript",
     "react",
